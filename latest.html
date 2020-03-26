@@ -1,0 +1,10 @@
+---
+  layout: none
+---
+{% for post in site.posts %}
+  {% if forloop.index0 > 0 %}
+    {% break %}
+  {% else %}
+    {{ post }}
+  {% endif %}
+{% endfor %}
