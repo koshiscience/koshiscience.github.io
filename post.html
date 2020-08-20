@@ -1,0 +1,12 @@
+---
+---
+
+<script type="text/javascript">
+  {% for post in site.posts %}
+    {% if forloop.index0 > 0 %}
+      {% break %}
+    {% else %}
+      location.href = "{{ post.url }}"
+    {% endif %}
+  {% endfor %}
+</script>

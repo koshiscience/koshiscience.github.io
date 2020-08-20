@@ -1,13 +1,29 @@
-title: koshiscience
-descrription: 高志中学校サイエンス部のホームぺージです
-language: ja
-# theme: jekyll-theme-cayman
-encding: utf-8
-plugins:
-  - jekyll-github-metadata
-  - jekyll-sitemap
-github : [metadata]
-repository: koshiscience/koshiscience.github.io # 自分のアカウントとリポジトリを書きましょう
 
-baseurl: ""
+title: 高志中学校サイエンス部
+description: 福井県立高志中学校にある部活、サイエンス部のホームページ
+language: ja
+long: ja
+location: ja
+encding: utf-8
+baseurl: "/"
 url: "https://koshiscience.github.io"
+github_username:  koshiscience
+repository: koshiscience/koshiscience.github.io
+
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jemoji
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-github-metadata
+  - jekyll-seo-tag
+
+
+defaults:
+  -
+    scope:
+      path: "/posts/"
+    values:
+      top_image: "2020-01-27-koshischool.jpg"
