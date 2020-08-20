@@ -1,0 +1,31 @@
+<div class="card bg-light shadow">
+  {% if page.collection == "posts"%}
+    <img class="card-img-top" src="/img/{{ page.top_image }}" alt="メイン画像">
+  {% endif %}
+  <div class="card-body">
+    <div class="border-bottom border-seccondary">
+      <h1 class="card-title">{{ page.title }}</h1>
+      {% if page.collection == "posts" %}
+      {{ page.date | date: "%Y年%m月%d日" }}
+      <br>
+      {% for tag in page.tags %}
+      <a type="button" class="btn btn-primary btn-sm m-1" href="/tags\?tags{{ tag }}">#{{ tag }}</a>
+      {% endfor %}
+      <br>
+      {% endif %}
+    </div>
+    {{ content }}
+    {% if page.collection == "posts" %}
+    {% if page.previous.url %}
+    <div class="border-top border-seccondary">
+      <a href="{{page.previous.url}}">previous<br>{{page.previous.title}}</a>
+    </div>
+    {% endif %}
+    {% if page.next.url %}
+    <div class="border-top border-seccondary">
+      <a href="{{page.next.url}}">next<br>{{page.next.title}}</a>
+    </div>
+    {% endif %}
+    {% endif %}
+  </div>
+</div>
