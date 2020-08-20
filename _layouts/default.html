@@ -1,28 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-<<<<<<< HEAD
     {% include head.html %}
-=======
-
-    {% if site.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
-    {% endif %}
-    <meta charset="UTF-8">
-
-{% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-    <meta name="google-site-verification" content="-9SuY6z4NWerDbrslcklClEu9XbclQp763RT0_m5-nY" />
->>>>>>> f6f209a96178ed1adadefe5a0e92782ed375efa1
   </head>
   <body>
     {% include header.html %}
