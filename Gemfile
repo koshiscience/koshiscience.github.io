@@ -1,3 +1,11 @@
 source "https://rubygems.org"
 
-gem "github-pages"
+gem "jekyll"
+gem "jekyll-sitemap"
+gem "jekyll-feed"
+gem "jemoji"
+gem "jekyll-mentions"
+gem "jekyll-redirect-from"
+gem "jekyll-github-metadata"
+gem "jekyll-seo-tag"
+gem "jekyll-tagging"
