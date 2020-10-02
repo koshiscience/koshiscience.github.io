@@ -4,3 +4,4 @@ _site
 vendor
 .memo
 _drafts
+.jekyll-cache
