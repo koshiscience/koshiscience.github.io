@@ -19,6 +19,10 @@ plugins:
   - jekyll-redirect-from
   - jekyll-github-metadata
   - jekyll-seo-tag
+  - jekyll/tagging
+
+tag_feed_layout: tag_page
+tag_feed_dir: tag
 
 
 defaults:

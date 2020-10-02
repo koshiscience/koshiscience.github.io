@@ -3,6 +3,7 @@
     <img class="card-img-top" src="/img/{{ page.top_image }}" alt="メイン画像">
   {% endif %}
   <div class="card-body">
+    {% if page.dir != "/tag/" %}
     <div class="border-bottom border-seccondary">
       <h1 class="card-title">{{ page.title }}</h1>
       {% if page.collection == "posts" %}
@@ -14,6 +15,7 @@
       <br>
       {% endif %}
     </div>
+    {% endif %}
     {{ content }}
     {% if page.collection == "posts" %}
     {% if page.previous.url %}
