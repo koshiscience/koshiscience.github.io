@@ -10,7 +10,7 @@
       {{ page.date | date: "%Y年%m月%d日" }}
       <br>
       {% for tag in page.tags %}
-      <a type="button" class="btn btn-primary btn-sm m-1" href="/tags\?tags{{ tag }}">#{{ tag }}</a>
+      <a type="button" class="btn btn-primary btn-sm m-1" href="/tag/{{ tag | downcase }}">#{{ tag }}</a>
       {% endfor %}
       <br>
       {% endif %}
