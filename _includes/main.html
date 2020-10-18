@@ -1,6 +1,6 @@
 <div class="card bg-light shadow">
   {% if page.collection == "posts"%}
-    <img class="card-img-top" src="/img/{{ page.image }}" alt="メイン画像">
+    <img class="card-img-top" src="{{ page.image }}" alt="メイン画像">
   {% endif %}
   <div class="card-body">
     {% if page.dir != "/tag/" %}

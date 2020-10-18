@@ -30,5 +30,5 @@ defaults:
     scope:
       path: ""
     values:
-      image: "2020-01-27-koshischool.jpg"
+      image: "/img/2020-01-27-koshischool.jpg"
       layout: "default"
