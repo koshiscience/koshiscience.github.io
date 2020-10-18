@@ -31,5 +31,5 @@ defaults:
       path: ""
       type: "posts"
     values:
-      top_image: "2020-01-27-koshischool.jpg"
+      image: "2020-01-27-koshischool.jpg"
       layout: "default"
