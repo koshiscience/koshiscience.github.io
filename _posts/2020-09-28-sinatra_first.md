@@ -2,7 +2,7 @@
 title: お手軽webサーバー、Sinatraはじめのいっぽ！
 tags:
 - Ruby
-- プログラミング
+- programming
 ---
 
 # webサーバーを作ろう！
