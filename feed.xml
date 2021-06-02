@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://koshiscience.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://koshiscience.github.io/" rel="alternate" type="text/html" /><updated>2021-06-02T10:22:54+00:00</updated><id>https://koshiscience.github.io/feed.xml</id><title type="html">高志中学校サイエンス部</title><subtitle>福井県立高志中学校にある部活、サイエンス部のホームページ</subtitle><entry><title type="html">紙飛行機実験機 ＃0</title><link href="https://koshiscience.github.io/2021/06/02/kamihikokuki_jikkennki_0.html" rel="alternate" type="text/html" title="紙飛行機実験機 ＃0" /><published>2021-06-02T00:00:00+00:00</published><updated>2021-06-02T00:00:00+00:00</updated><id>https://koshiscience.github.io/2021/06/02/kamihikokuki_jikkennki_0</id><content type="html" xml:base="https://koshiscience.github.io/2021/06/02/kamihikokuki_jikkennki_0.html">&lt;h1 id=&quot;紙飛行機実験記-0&quot;&gt;紙飛行機実験記 ＃0&lt;/h1&gt;
+
+&lt;p&gt;みなさん初めまして！&lt;/p&gt;
+
+&lt;p&gt;私たちは&lt;strong&gt;紙飛行機部門&lt;/strong&gt;です！&lt;/p&gt;
+
+&lt;p&gt;紙飛行機に関する研究をしています。&lt;/p&gt;
+
+&lt;p&gt;今回は、私たちが行ってきた研究を紹介していきます！&lt;/p&gt;
+
+&lt;h3 id=&quot;研究のきっかけ&quot;&gt;研究のきっかけ&lt;/h3&gt;
+
+&lt;p&gt;私たちは2020年の2月にこの研究を始めました。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;その理由は・・・&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;世界一とぶ紙飛行機を作りたかったからです&quot;&gt;&lt;strong&gt;「世界一とぶ紙飛行機」&lt;/strong&gt;を作りたかったからです！！&lt;/h4&gt;
+
+&lt;p&gt;皆さんも幼少期のころ紙飛行機を飛ばして遊んでいたことでしょう。&lt;/p&gt;
+
+&lt;p&gt;そんな身近な紙飛行機を詳しく研究したいと思い、この研究を始めました。&lt;/p&gt;
+
+&lt;h3 id=&quot;これからの展望&quot;&gt;これからの展望&lt;/h3&gt;
+
+&lt;p&gt;世界一とぶ紙飛行機を作成する上で、&lt;/p&gt;
+
+&lt;h6 id=&quot;安定して飛ばすことが可能な発射台&quot;&gt;・安定して飛ばすことが可能な発射台&lt;/h6&gt;
+
+&lt;h6 id=&quot;よく飛ぶ紙飛行機の折り方&quot;&gt;・よく飛ぶ紙飛行機の折り方&lt;/h6&gt;
+
+&lt;p&gt;　　　　　　　　　　　&lt;/p&gt;
+
+&lt;p&gt;　　　　　　　　　　　　　　について考える必要があります。&lt;/p&gt;
+
+&lt;p&gt;また、紙飛行機が非常に&lt;strong&gt;よく飛ぶ角度、紙の大きさ&lt;/strong&gt;ついても同様です。&lt;/p&gt;
+
+&lt;h4 id=&quot;毎月の第４週目に投稿するので楽しみにしてください&quot;&gt;毎月の第４週目に投稿するので、楽しみにしてください！&lt;/h4&gt;</content><author><name></name></author><category term="air-plane" /><summary type="html">紙飛行機実験記 ＃0 みなさん初めまして！ 私たちは紙飛行機部門です！ 紙飛行機に関する研究をしています。 今回は、私たちが行ってきた研究を紹介していきます！ 研究のきっかけ 私たちは2020年の2月にこの研究を始めました。 その理由は・・・ 「世界一とぶ紙飛行機」を作りたかったからです！！ 皆さんも幼少期のころ紙飛行機を飛ばして遊んでいたことでしょう。 そんな身近な紙飛行機を詳しく研究したいと思い、この研究を始めました。 これからの展望 世界一とぶ紙飛行機を作成する上で、 ・安定して飛ばすことが可能な発射台 ・よく飛ぶ紙飛行機の折り方 　　　　　　　　　　　 　　　　　　　　　　　　　　について考える必要があります。 また、紙飛行機が非常によく飛ぶ角度、紙の大きさついても同様です。 毎月の第４週目に投稿するので、楽しみにしてください！</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://koshiscience.github.io/img/2021-06-02-kamihikouki_omote.png" /><media:content medium="image" url="https://koshiscience.github.io/img/2021-06-02-kamihikouki_omote.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">CNNを導入して筆跡鑑定の認識精度100%を達成！</title><link href="https://koshiscience.github.io/2021/04/05/hisseki_tensorflow.html" rel="alternate" type="text/html" title="CNNを導入して筆跡鑑定の認識精度100%を達成！" /><published>2021-04-05T00:00:00+00:00</published><updated>2021-04-05T00:00:00+00:00</updated><id>https://koshiscience.github.io/2021/04/05/hisseki_tensorflow</id><content type="html" xml:base="https://koshiscience.github.io/2021/04/05/hisseki_tensorflow.html">&lt;h1 id=&quot;お久しぶりです&quot;&gt;お久しぶりです&lt;/h1&gt;
+
+&lt;p&gt;こんにちは。&lt;/p&gt;
+
+&lt;p&gt;筆跡鑑定チームです。&lt;/p&gt;
+
+&lt;p&gt;このチームはIchigoJamチームから派生したチームで、&lt;strong&gt;「筆跡鑑定によるユーザー認証」&lt;/strong&gt;というテーマで研究を行っています。&lt;/p&gt;
+
+&lt;h1 id=&quot;筆跡鑑定によるユーザー認証&quot;&gt;筆跡鑑定によるユーザー認証&lt;/h1&gt;
+
+&lt;p&gt;まず初めに、筆跡鑑定によるユーザー認証について説明します。&lt;/p&gt;
+
+&lt;p&gt;この研究は、パスワードや指紋などで行われるユーザー認証を、人工知能による筆跡鑑定に置き換えようというアイデアを基に研究を行っています。&lt;/p&gt;
+
+&lt;p&gt;筆跡鑑定に置き換えることによって、&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;タッチパネルで認証を行えるため、高価なセンサーなどを用いずに、既存のデバイスで認証できる&lt;/li&gt;
+  &lt;li&gt;手袋などをつけていても認証できる&lt;/li&gt;
+  &lt;li&gt;偽造しにくい&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;などの利点があります。&lt;/p&gt;
+
+&lt;p&gt;この筆跡鑑定を、人工知能の技術で行うためにはどうすればいいかについて、現在研究を進めています。&lt;/p&gt;
+
+&lt;h2 id=&quot;目標&quot;&gt;目標&lt;/h2&gt;
+
+&lt;p&gt;実現したときのイメージを説明します。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;ユーザー登録：自分の名前の筆跡を10枚程度登録してもらう（これを本人かどうかの判断基準に使う）&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/img/2021-04-03-hisseki_image.png&quot; alt=&quot;筆跡のイメージ&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;認証：筆跡のみを要求→それをもとにどのユーザーか＆本人かを判定する&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;ニューラルネットワークとは&quot;&gt;ニューラルネットワークとは？&lt;/h1&gt;
+
+&lt;p&gt;その前に・・・・・・&lt;/p&gt;
+
+&lt;h2 id=&quot;機械学習とは&quot;&gt;機械学習とは？&lt;/h2&gt;
+
+&lt;p&gt;機械学習について説明します。&lt;/p&gt;
+
+&lt;p&gt;機械学習とは、&lt;strong&gt;経験からの学習により自動で改善するコンピューターアルゴリズムもしくはその研究領域&lt;/strong&gt;（&lt;a href=&quot;https://ja.wikipedia.org/wiki/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92&quot;&gt;Wikipedia&lt;/a&gt;より）のことで、人工知能の一種です。&lt;/p&gt;
+
+&lt;p&gt;簡単に言うと、&lt;strong&gt;人間みたいに、見たり聞いたりしたものをもとに成長していく仕組み&lt;/strong&gt;です。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;訓練データ&lt;/strong&gt;と呼ばれるデータを読み込み学習し、それをもとに何かを判定したり動かしたりします。&lt;/p&gt;
+
+&lt;p&gt;勉強に例えると、&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;とりあえず、わからないなりに教科書の問題（&lt;strong&gt;教師データ&lt;/strong&gt;）を解いてみる&lt;/li&gt;
+  &lt;li&gt;間違えたところを訂正する&lt;/li&gt;
+  &lt;li&gt;1~3を繰り返す&lt;/li&gt;
+  &lt;li&gt;ある程度力がついてきたらテスト（&lt;strong&gt;テストデータ&lt;/strong&gt;）で最終的な実力を測る&lt;/li&gt;
+  &lt;li&gt;実際に学習内容を様々な場面で活用していく&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;みたいな具合です。&lt;/p&gt;
+
+&lt;h2 id=&quot;ニューラルネットワークとは-1&quot;&gt;ニューラルネットワークとは？&lt;/h2&gt;
+
+&lt;p&gt;機械学習のアルゴリズムの一つで、&lt;strong&gt;脳の神経伝達の仕組みを模したもの&lt;/strong&gt;です。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://aizine.ai/glossary-neural-network/&quot;&gt;こちらのサイト&lt;/a&gt;に詳しい解説があります。&lt;/p&gt;
+
+&lt;p&gt;僕たちは、このニューラルネットワークというアルゴリズムを用いて、筆跡鑑定できないかと試行錯誤してきました。&lt;/p&gt;
+
+&lt;h1 id=&quot;シンプルなニューラルネットワーク&quot;&gt;シンプルなニューラルネットワーク&lt;/h1&gt;
+
+&lt;p&gt;最初に僕たちが試した、シンプルなニューラルネットワークによる筆跡鑑定について説明します。&lt;/p&gt;
+
+&lt;h2 id=&quot;環境&quot;&gt;環境&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ruby 2.7（プログラミング言語）&lt;/li&gt;
+  &lt;li&gt;scikit-learn 0.22（機械学習ライブラリ、機械学習の便利ツールの詰め合わせ）&lt;/li&gt;
+  &lt;li&gt;PyCall（scikit-learnをRubyから呼びだすためのライブラリ）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;scikit-learnは本来、Pythonというプログラミング言語のためのライブラリで、Rubyで使うことはできません。&lt;/p&gt;
+
+&lt;p&gt;ですが、&lt;strong&gt;最終的にwebアプリにすることを考え&lt;/strong&gt;、サーバーに強いRubyからPyCallを用いてscikit-learnを使うことにしました。&lt;/p&gt;
+
+&lt;h2 id=&quot;pycallを用いた実装&quot;&gt;PyCallを用いた実装&lt;/h2&gt;
+
+&lt;p&gt;PyCallを用いると、PythonのライブラリをRubyから呼び出して使うことができます。&lt;/p&gt;
+
+&lt;p&gt;PyCallの読み込み（Ruby）&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;pycall/import&quot;&lt;/span&gt;
+&lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;PyCall&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Import&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;※事前にRubyとPython、またPyCallと使いたいPythonのライブラリがインストールされている環境でないと動きません。&lt;/p&gt;
+
+&lt;p&gt;PyCallを読み込めば、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pyimport&lt;/code&gt;や&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pyfrom&lt;/code&gt;などのメソッドが使えるようになり、Pythonのライブラリを読み込んで動かすことができるようになります。&lt;/p&gt;
+
+&lt;p&gt;Pythonのライブラリのチュートリアルやドキュメントのコードは、Pythonで書かれているため&lt;strong&gt;うまくRubyに書き換える&lt;/strong&gt;必要があります。&lt;/p&gt;
+
+&lt;p&gt;ライブラリの読み込み（Python）&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# scikit-learnの例
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.neural_network&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;MLPClassifier&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# TensorFlowの例
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;keras&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow.keras&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datasets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# そのほかのライブラリの例
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;（Ruby）&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# scikit-learnの例&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pyimport&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;sklearn.neural_network&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;import: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MLPClassifier&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Tensorflowの例&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pyfrom&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;tensorflow&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;import: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;keras&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pyfrom&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;tensorflow.keras&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;import: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;datasets&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;layers&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;models&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 複数指定するときは配列を使う&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# そのほかのライブラリの例&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pyimport&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;numpy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;as: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;numpy&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# &quot;文字列&quot; の代わりに :シンボル を用いることもできる&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pyfrom&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:tensorflow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;import: :keras&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# コンマが入る場合は &quot;文字列&quot; を使う、配列でも :シンボル を使える&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pyfrom&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;tensorflow.keras&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;import: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:datasets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:layers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:models&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;インスタンスを作る（Python）&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# scikit-learnのニューラルネットワークの例
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;estimator&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MLPClassifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;solver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lbfgs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;activation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;logistic&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e-5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;hidden_layer_sizes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;random_state&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;（Ruby）&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# scikit-learnのニューラルネットワークの例&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;estimator&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MLPClassifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# .newをつける&lt;/span&gt;
+	&lt;span class=&quot;ss&quot;&gt;solver: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;lbfgs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# =ではなく:を用いる&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;activation: :logistic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# :シンボル も使える&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;alpha: &lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e-5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 指数表現はそのままでも問題なし&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;hidden_layer_sizes: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# タプル（配列のようなもの）は配列で表現&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;random_state: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;関数を呼び出す（Python)&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# scikit-learnの学習させる関数
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;estimator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;images&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;（Ruby）&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# scikit-learnの学習させる関数&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;estimator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;images&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 括弧はなくてもよい&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;テストの条件&quot;&gt;テストの条件&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;筆跡データ&lt;/p&gt;
+
+    &lt;p&gt;1人につき、教師データ：30枚、テストデータ：10枚の合計40枚の√記号を用いります。&lt;/p&gt;
+
+    &lt;p&gt;これを2人分集めました。&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/img/2021-04-03-base0.png&quot; alt=&quot;筆跡の例&quot; /&gt;&lt;img src=&quot;/img/2021-04-03-base1.png&quot; alt=&quot;筆跡の例&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;↑こんな感じ&lt;/p&gt;
+
+    &lt;p&gt;人によって癖がかなりある√記号は、&lt;strong&gt;機械にとって認識しやすい&lt;/strong&gt;ためこの記号を用いりました。&lt;/p&gt;
+
+    &lt;p&gt;今回はあくまでもテストなので、&lt;strong&gt;傾向などをつかむために良い結果が出やすいよう&lt;/strong&gt;に機械に有利な条件で進めていきました。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;検証方法&lt;/p&gt;
+
+    &lt;p&gt;別の2人が書いた筆跡を、どちらが書いたものか分類する精度を測ります。&lt;/p&gt;
+
+    &lt;p&gt;まず、教師データを分類器に学習させます。&lt;/p&gt;
+
+    &lt;p&gt;教師データはどちらが書いたかのラベルが貼ってあり、分類器はどちらが書いたかを認識できます。&lt;/p&gt;
+
+    &lt;p&gt;学習出来たら、テストデータで分類させて、どのくらい分類できるのかを検証します。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;検証結果&quot;&gt;検証結果&lt;/h2&gt;
+
+&lt;p&gt;いろいろなハイパーパラメータ（最初に設定しなければいけないパラメータ）を試したところ、&lt;strong&gt;最大で平均約80%の予測精度&lt;/strong&gt;を達成しました。&lt;/p&gt;
+
+&lt;p&gt;ネットワークの設定&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;estimator&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MLPClassifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;ss&quot;&gt;hidden_layer_sizes: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;128&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+  &lt;span class=&quot;ss&quot;&gt;activation: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;tanh&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;ss&quot;&gt;solver: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;lbfgs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;ss&quot;&gt;max_iter: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;ss&quot;&gt;tol: &lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.0001&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;scikit-learnのパラメータですが、表記方法はRubyになっています。&lt;/p&gt;
+
+&lt;h1 id=&quot;畳み込みニューラルネットワークcnn&quot;&gt;畳み込みニューラルネットワーク（CNN）&lt;/h1&gt;
+
+&lt;p&gt;ですが、80%の予測精度では&lt;strong&gt;とても個人情報や金銭がかかっているユーザー認証で実用できる精度&lt;/strong&gt;ではないので、画像認識に有利と言われている&lt;strong&gt;畳み込みニューラルネットワーク&lt;/strong&gt;を導入しました。&lt;/p&gt;
+
+&lt;p&gt;畳み込みニューラルネットワークは、&lt;strong&gt;ニューラルネットワークに人間の物体認識の仕組みのモデルを追加したもの&lt;/strong&gt;で、現在のAIブームの引き金となったものです。&lt;/p&gt;
+
+&lt;p&gt;これについても&lt;a href=&quot;https://www.imagazine.co.jp/%E7%95%B3%E3%81%BF%E8%BE%BC%E3%81%BF%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AE%E3%80%8C%E5%9F%BA%E7%A4%8E%E3%81%AE%E5%9F%BA%E7%A4%8E%E3%80%8D%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99/&quot;&gt;こちらのサイト&lt;/a&gt;に詳しい解説があります。&lt;/p&gt;
+
+&lt;h2 id=&quot;環境-1&quot;&gt;環境&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ruby 2.7（プログラミング言語）&lt;/li&gt;
+  &lt;li&gt;TensorFlow 2.4（機械学習ライブラリ）&lt;/li&gt;
+  &lt;li&gt;PyCall（scikit-learnをRubyから呼びだすためのライブラリ）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;プログラミング言語は変わらないのですが、ライブラリを&lt;strong&gt;scikit-learnからTensorFlowに変更&lt;/strong&gt;しました。&lt;/p&gt;
+
+&lt;p&gt;TensorFlowの方が、よりニューラルネットワーク向きで、ネットワークの層ごとに細かくいろいろなハイパーパラメータを設定出来るなどの利点があります。&lt;/p&gt;
+
+&lt;p&gt;その中でも、&lt;strong&gt;畳み込みニューラルネットワークを簡単に使うことができる&lt;/strong&gt;のは大きな利点です。&lt;/p&gt;
+
+&lt;h2 id=&quot;検証結果-1&quot;&gt;検証結果&lt;/h2&gt;
+
+&lt;p&gt;まず試しに、&lt;a href=&quot;https://www.tensorflow.org/tutorials/images/cnn?hl=ja&quot;&gt;このチュートリアル&lt;/a&gt;をもとにCNNのネットワークを設定し、集めた筆跡データで認識するようにしたところ、&lt;strong&gt;いきなり100%の精度&lt;/strong&gt;を出すことができました。&lt;/p&gt;
+
+&lt;p&gt;ネットワークの設定&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Sequential&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Conv2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;activation: :relu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;input_shape: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;128&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;118&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;MaxPooling2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Conv2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;activation: :relu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;MaxPooling2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Conv2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;activation: :relu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Flatten&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Dense&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;128&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;activation: :relu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Dense&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;members&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;activation: :softmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;もちろん、条件は先ほどのscikit-learnの時と変わりません。&lt;/p&gt;
+
+&lt;p&gt;教師データとテストデータを入れ替えたりして何度かやってみても、100%の結果が変わることはありませんでした。&lt;/p&gt;
+
+&lt;p&gt;さらには、2人の分類からもう1人分の筆跡を増やして、&lt;strong&gt;3人の分類に変更しても100%の結果が変わることはありませんでした。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;このことから、&lt;strong&gt;CNNは画像認識においてかなり強力&lt;/strong&gt;であることを実感しました。&lt;/p&gt;
+
+&lt;h1 id=&quot;今後の課題&quot;&gt;今後の課題&lt;/h1&gt;
+
+&lt;p&gt;今回、&lt;strong&gt;CNNを使うとかなり高い精度を実現&lt;/strong&gt;することが可能だとわかりました。&lt;/p&gt;
+
+&lt;p&gt;ですが、まだまだハイパーパラメータはとりあえずでチュートリアルのものを使っているだけで、少ししか調整していません。&lt;/p&gt;
+
+&lt;p&gt;また、分類する人数は3人と、実用には及ばないレベルなのでもっと増やしても精度を保てることを確認しなければなりません。&lt;/p&gt;
+
+&lt;p&gt;人数を増やすと、認識精度以外にも処理速度などもかなり低下する恐れがあります。&lt;/p&gt;
+
+&lt;p&gt;計算速度と精度のバランスを、ハイパーパラメータで調整する必要が出てくるでしょう。&lt;/p&gt;
+
+&lt;p&gt;目標は&lt;strong&gt;10人の筆跡を100%に近い精度で分類できるようにする&lt;/strong&gt;ことです。&lt;/p&gt;
+
+&lt;p&gt;実際にユーザー認証システムを実装する場合は、名前でまず分類して、その中で誰の筆跡か分類することになるでしょう。&lt;/p&gt;
+
+&lt;p&gt;同姓同名の人は、平均約4人（&lt;a href=&quot;https://www.insightnow.jp/article/5069?page=2#:~:text=%E3%80%8C%E5%90%8C%E5%A7%93%E5%90%8C%E5%90%8D%E8%BE%9E%E5%85%B8%E3%80%8D%E3%81%AB%E3%81%AF,%E7%A8%8B%E5%BA%A6%E3%81%AA%E3%82%8F%E3%81%91%E3%81%A7%E3%81%82%E3%82%8B%E3%80%82&quot;&gt;このサイト&lt;/a&gt;より）とかなり少ないため、同じ文字列が記入されている筆跡を分類する場合は10人ほどを正確に分類できれば十分だろう考えたため、10人を目標にしました。&lt;/p&gt;
+
+&lt;p&gt;これを目標に、研究を頑張っていきます！&lt;/p&gt;
+
+&lt;p&gt;今後も、僕たちの応援よろしくお願いします！&lt;/p&gt;</content><author><name></name></author><category term="Ruby" /><category term="hisseki" /><category term="programming" /><summary type="html">お久しぶりです こんにちは。 筆跡鑑定チームです。 このチームはIchigoJamチームから派生したチームで、「筆跡鑑定によるユーザー認証」というテーマで研究を行っています。 筆跡鑑定によるユーザー認証 まず初めに、筆跡鑑定によるユーザー認証について説明します。 この研究は、パスワードや指紋などで行われるユーザー認証を、人工知能による筆跡鑑定に置き換えようというアイデアを基に研究を行っています。 筆跡鑑定に置き換えることによって、 タッチパネルで認証を行えるため、高価なセンサーなどを用いずに、既存のデバイスで認証できる 手袋などをつけていても認証できる 偽造しにくい などの利点があります。 この筆跡鑑定を、人工知能の技術で行うためにはどうすればいいかについて、現在研究を進めています。 目標 実現したときのイメージを説明します。 ユーザー登録：自分の名前の筆跡を10枚程度登録してもらう（これを本人かどうかの判断基準に使う） 認証：筆跡のみを要求→それをもとにどのユーザーか＆本人かを判定する ニューラルネットワークとは？ その前に・・・・・・ 機械学習とは？ 機械学習について説明します。 機械学習とは、経験からの学習により自動で改善するコンピューターアルゴリズムもしくはその研究領域（Wikipediaより）のことで、人工知能の一種です。 簡単に言うと、人間みたいに、見たり聞いたりしたものをもとに成長していく仕組みです。 訓練データと呼ばれるデータを読み込み学習し、それをもとに何かを判定したり動かしたりします。 勉強に例えると、 とりあえず、わからないなりに教科書の問題（教師データ）を解いてみる 間違えたところを訂正する 1~3を繰り返す ある程度力がついてきたらテスト（テストデータ）で最終的な実力を測る 実際に学習内容を様々な場面で活用していく みたいな具合です。 ニューラルネットワークとは？ 機械学習のアルゴリズムの一つで、脳の神経伝達の仕組みを模したものです。 こちらのサイトに詳しい解説があります。 僕たちは、このニューラルネットワークというアルゴリズムを用いて、筆跡鑑定できないかと試行錯誤してきました。 シンプルなニューラルネットワーク 最初に僕たちが試した、シンプルなニューラルネットワークによる筆跡鑑定について説明します。 環境 Ruby 2.7（プログラミング言語） scikit-learn 0.22（機械学習ライブラリ、機械学習の便利ツールの詰め合わせ） PyCall（scikit-learnをRubyから呼びだすためのライブラリ） scikit-learnは本来、Pythonというプログラミング言語のためのライブラリで、Rubyで使うことはできません。 ですが、最終的にwebアプリにすることを考え、サーバーに強いRubyからPyCallを用いてscikit-learnを使うことにしました。 PyCallを用いた実装 PyCallを用いると、PythonのライブラリをRubyから呼び出して使うことができます。 PyCallの読み込み（Ruby） require &quot;pycall/import&quot; include PyCall::Import ※事前にRubyとPython、またPyCallと使いたいPythonのライブラリがインストールされている環境でないと動きません。 PyCallを読み込めば、pyimportやpyfromなどのメソッドが使えるようになり、Pythonのライブラリを読み込んで動かすことができるようになります。 Pythonのライブラリのチュートリアルやドキュメントのコードは、Pythonで書かれているためうまくRubyに書き換える必要があります。 ライブラリの読み込み（Python） # scikit-learnの例 import sklearn.neural_network import MLPClassifier # TensorFlowの例 from tensorflow import keras from tensorflow.keras import datasets, layers, models # そのほかのライブラリの例 import numpy as np （Ruby） # scikit-learnの例 pyimport &quot;sklearn.neural_network&quot;, import: &quot;MLPClassifier&quot; # Tensorflowの例 pyfrom &quot;tensorflow&quot;, import: &quot;keras&quot; pyfrom &quot;tensorflow.keras&quot;, import: [&quot;datasets&quot;, &quot;layers&quot;, &quot;models&quot;] # 複数指定するときは配列を使う # そのほかのライブラリの例 pyimport &quot;numpy&quot;, as: &quot;numpy&quot; # &quot;文字列&quot; の代わりに :シンボル を用いることもできる pyfrom :tensorflow, import: :keras # コンマが入る場合は &quot;文字列&quot; を使う、配列でも :シンボル を使える pyfrom &quot;tensorflow.keras&quot;, import: [:datasets, :layers, :models] インスタンスを作る（Python） # scikit-learnのニューラルネットワークの例 estimator = MLPClassifier( solver=&quot;lbfgs&quot;, activation=&quot;logistic&quot;, alpha=1e-5, hidden_layer_sizes=(5, 2), random_state=1 ) （Ruby） # scikit-learnのニューラルネットワークの例 estimator = MLPClassifier.new( # .newをつける solver: &quot;lbfgs&quot;, # =ではなく:を用いる activation: :logistic, # :シンボル も使える alpha: 1e-5, # 指数表現はそのままでも問題なし hidden_layer_sizes: [5, 2], # タプル（配列のようなもの）は配列で表現 random_state: 1 ) 関数を呼び出す（Python) # scikit-learnの学習させる関数 estimator.fit(images, labels) （Ruby） # scikit-learnの学習させる関数 estimator.fit images, labels # 括弧はなくてもよい テストの条件 筆跡データ 1人につき、教師データ：30枚、テストデータ：10枚の合計40枚の√記号を用いります。 これを2人分集めました。 ↑こんな感じ 人によって癖がかなりある√記号は、機械にとって認識しやすいためこの記号を用いりました。 今回はあくまでもテストなので、傾向などをつかむために良い結果が出やすいように機械に有利な条件で進めていきました。 検証方法 別の2人が書いた筆跡を、どちらが書いたものか分類する精度を測ります。 まず、教師データを分類器に学習させます。 教師データはどちらが書いたかのラベルが貼ってあり、分類器はどちらが書いたかを認識できます。 学習出来たら、テストデータで分類させて、どのくらい分類できるのかを検証します。 検証結果 いろいろなハイパーパラメータ（最初に設定しなければいけないパラメータ）を試したところ、最大で平均約80%の予測精度を達成しました。 ネットワークの設定 estimator = MLPClassifier.new( hidden_layer_sizes: [64, 128], activation: &quot;tanh&quot;, solver: &quot;lbfgs&quot;, max_iter: 100000, tol: 0.0001 ) scikit-learnのパラメータですが、表記方法はRubyになっています。 畳み込みニューラルネットワーク（CNN） ですが、80%の予測精度ではとても個人情報や金銭がかかっているユーザー認証で実用できる精度ではないので、画像認識に有利と言われている畳み込みニューラルネットワークを導入しました。 畳み込みニューラルネットワークは、ニューラルネットワークに人間の物体認識の仕組みのモデルを追加したもので、現在のAIブームの引き金となったものです。 これについてもこちらのサイトに詳しい解説があります。 環境 Ruby 2.7（プログラミング言語） TensorFlow 2.4（機械学習ライブラリ） PyCall（scikit-learnをRubyから呼びだすためのライブラリ） プログラミング言語は変わらないのですが、ライブラリをscikit-learnからTensorFlowに変更しました。 TensorFlowの方が、よりニューラルネットワーク向きで、ネットワークの層ごとに細かくいろいろなハイパーパラメータを設定出来るなどの利点があります。 その中でも、畳み込みニューラルネットワークを簡単に使うことができるのは大きな利点です。 検証結果 まず試しに、このチュートリアルをもとにCNNのネットワークを設定し、集めた筆跡データで認識するようにしたところ、いきなり100%の精度を出すことができました。 ネットワークの設定 model = models.Sequential.new([ layers.Conv2D.new(64, [5, 5], activation: :relu, input_shape: [128, 118, 1]), layers.MaxPooling2D.new([4, 4]), layers.Conv2D.new(64, [5, 5], activation: :relu), layers.MaxPooling2D.new([4, 4]), layers.Conv2D.new(32, [5, 5], activation: :relu), layers.Flatten.new, layers.Dense.new(128, activation: :relu), layers.Dense.new(members.length, activation: :softmax) ]) もちろん、条件は先ほどのscikit-learnの時と変わりません。 教師データとテストデータを入れ替えたりして何度かやってみても、100%の結果が変わることはありませんでした。 さらには、2人の分類からもう1人分の筆跡を増やして、3人の分類に変更しても100%の結果が変わることはありませんでした。 このことから、CNNは画像認識においてかなり強力であることを実感しました。 今後の課題 今回、CNNを使うとかなり高い精度を実現することが可能だとわかりました。 ですが、まだまだハイパーパラメータはとりあえずでチュートリアルのものを使っているだけで、少ししか調整していません。 また、分類する人数は3人と、実用には及ばないレベルなのでもっと増やしても精度を保てることを確認しなければなりません。 人数を増やすと、認識精度以外にも処理速度などもかなり低下する恐れがあります。 計算速度と精度のバランスを、ハイパーパラメータで調整する必要が出てくるでしょう。 目標は10人の筆跡を100%に近い精度で分類できるようにすることです。 実際にユーザー認証システムを実装する場合は、名前でまず分類して、その中で誰の筆跡か分類することになるでしょう。 同姓同名の人は、平均約4人（このサイトより）とかなり少ないため、同じ文字列が記入されている筆跡を分類する場合は10人ほどを正確に分類できれば十分だろう考えたため、10人を目標にしました。 これを目標に、研究を頑張っていきます！ 今後も、僕たちの応援よろしくお願いします！</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://koshiscience.github.io/img/2020-04-03-header.png" /><media:content medium="image" url="https://koshiscience.github.io/img/2020-04-03-header.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">お手軽webサーバー、Sinatraはじめのいっぽ！</title><link href="https://koshiscience.github.io/2020/09/28/sinatra_first.html" rel="alternate" type="text/html" title="お手軽webサーバー、Sinatraはじめのいっぽ！" /><published>2020-09-28T00:00:00+00:00</published><updated>2020-09-28T00:00:00+00:00</updated><id>https://koshiscience.github.io/2020/09/28/sinatra_first</id><content type="html" xml:base="https://koshiscience.github.io/2020/09/28/sinatra_first.html">&lt;h1 id=&quot;webサーバーを作ろう&quot;&gt;webサーバーを作ろう！&lt;/h1&gt;
+
+&lt;p&gt;こんにちは。高志中学校サイエンス部プログラミング班です。&lt;/p&gt;
+
+&lt;p&gt;今回のブログでは、Sinatraというフレームワークを使って、簡単なwebサーバーを作ってみようと思います！&lt;/p&gt;
+
+&lt;h1 id=&quot;sinatraってなに&quot;&gt;Sinatraってなに？&lt;/h1&gt;
+
+&lt;p&gt;Sinatraは、Rubyというプログラミング言語で動くwebサーバーフレームワークです。&lt;/p&gt;
+
+&lt;p&gt;分かりにくく感じますが、、、簡単に言うと、サーバーを楽に作れるものとなります。&lt;/p&gt;
+
+&lt;p&gt;Rubyのwebサーバーフレームワークというと、Ruby on Railsが有名ですが、Sinatraのほうがシンプルで単純なのでわかりやすいです。&lt;/p&gt;
+
+&lt;h1 id=&quot;早速インストール&quot;&gt;早速インストール！&lt;/h1&gt;
+
+&lt;p&gt;早速インストール！のその前に・・・&lt;/p&gt;
+
+&lt;p&gt;RubyがPCにインストールされている必要があります。&lt;/p&gt;
+
+&lt;p&gt;インストールの方法はOSによって異なるので、「ruby インストール windows」のように検索して調べてみてください。&lt;/p&gt;
+
+&lt;p&gt;Rubyのインストールができたら、早速Sinatraのインストールをしていきましょう。&lt;/p&gt;
+
+&lt;p&gt;WindowsならWindows PowerShell、Macならターミナルを起動しましょう。&lt;/p&gt;
+
+&lt;p&gt;起動出来たら、下のように打ってみましょう。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install sinatra
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;これを入力すると、Sinatra本体のインストールが始まります。&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install sinatra-contrib
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;で、Sinatra関連の便利ツールもインストールされます。&lt;/p&gt;
+
+&lt;h1 id=&quot;webサーバーでhello-world&quot;&gt;webサーバーで”Hello World”&lt;/h1&gt;
+
+&lt;p&gt;それでは、定番の”Hello World”を表示するプログラムを書いてみましょう。&lt;/p&gt;
+
+&lt;p&gt;どこかに作業用のフォルダーを作ってみましょう。&lt;/p&gt;
+
+&lt;p&gt;それから、AtomやVisual Studio Codeなどのテキストエディタでそのフォルダーを開きます。&lt;/p&gt;
+
+&lt;p&gt;そして、example.rbというファイルを作り、&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;sinatra&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;sinatra/reloader&quot;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;と入力しましょう。&lt;/p&gt;
+
+&lt;p&gt;次に、example.rbを実行します。&lt;/p&gt;
+
+&lt;p&gt;ターミナルなどで、&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /home/pi/ruby
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;と入力して、フォルダーの中へ移動します（/home/pi/rubyの部分はフォルダーのパスを入力してください）&lt;/p&gt;
+
+&lt;p&gt;そこで、&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ruby example.rb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;として、example.rbを実行してみましょう。&lt;/p&gt;
+
+&lt;p&gt;いろいろログが出てきますが、”Hello World”とは表示されませんね。&lt;/p&gt;
+
+&lt;p&gt;また、何も起こらずにコマンドを打つ画面に戻ってしまったら、エラーが発生しているかもしれません。&lt;/p&gt;
+
+&lt;p&gt;プログラムの中身や手順をよく確認してみてください。&lt;/p&gt;
+
+&lt;p&gt;うまくいってたら、すでにサーバーが起動しています！&lt;/p&gt;
+
+&lt;p&gt;ブラウザで、&lt;a href=&quot;https://localhost:4567&quot;&gt;https://localhost:4567/&lt;/a&gt;にアクセスしてみると・・・&lt;/p&gt;
+
+&lt;p&gt;どうでしょうか？&lt;/p&gt;
+
+&lt;p&gt;Hello Worldと表示されたら成功です！&lt;/p&gt;
+
+&lt;h1 id=&quot;プログラムの構造&quot;&gt;プログラムの構造&lt;/h1&gt;
+
+&lt;p&gt;もう一度、さっきのプログラムを見てみましょう&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;sinatra&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;sinatra/reloader&quot;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;1行目：Sinatraを読み込む&lt;/p&gt;
+
+&lt;p&gt;2行目：実行中にファイルが変更された場合、その変更を反映するツールを読み込む&lt;/p&gt;
+
+&lt;p&gt;4行目：”/”の要求を受けたら、&lt;/p&gt;
+
+&lt;p&gt;5行目：”Hello World”を返して&lt;/p&gt;
+
+&lt;p&gt;6行目：get “/”の処理を終わる&lt;/p&gt;
+
+&lt;p&gt;こんな感じです。&lt;/p&gt;
+
+&lt;p&gt;6行目”Hello World”の部分を変更すると、どうなるでしょうか？&lt;/p&gt;
+
+&lt;p&gt;7行目”/”の部分を変更すると、どうなるでしょうか？&lt;/p&gt;
+
+&lt;p&gt;いろいろ試してみましょう！&lt;/p&gt;
+
+&lt;h1 id=&quot;改造のポイント&quot;&gt;改造のポイント&lt;/h1&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;の部分では、do~endの間に”Hello World”という文字列しかないですが、ここには処理を書き込むこともできます。&lt;/p&gt;
+
+&lt;p&gt;Rubyの処理を書き込めるので、いろいろ調べて試してみてください！&lt;/p&gt;
+
+&lt;p&gt;試しにカウント機能作ってみました。&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;sinatra&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;sinatra/reloader&quot;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;一回読み込むごとに、表示される数字が増えていきます！&lt;/p&gt;
+
+&lt;p&gt;このように、いろいろ改造してみましょう！&lt;/p&gt;
+
+&lt;h2 id=&quot;報告&quot;&gt;報告&lt;/h2&gt;
+
+&lt;p&gt;現在、ブログのタグ機能がうまく機能していません。&lt;/p&gt;
+
+&lt;p&gt;工夫して実装したのですが、GitHub Pagesではうまく動かないようです。&lt;/p&gt;
+
+&lt;p&gt;そのため、代わりの方法を考えています。&lt;/p&gt;
+
+&lt;p&gt;タグ機能の復活までしばらくお待ちください。&lt;/p&gt;</content><author><name></name></author><category term="Ruby" /><category term="programming" /><summary type="html">webサーバーを作ろう！ こんにちは。高志中学校サイエンス部プログラミング班です。 今回のブログでは、Sinatraというフレームワークを使って、簡単なwebサーバーを作ってみようと思います！ Sinatraってなに？ Sinatraは、Rubyというプログラミング言語で動くwebサーバーフレームワークです。 分かりにくく感じますが、、、簡単に言うと、サーバーを楽に作れるものとなります。 Rubyのwebサーバーフレームワークというと、Ruby on Railsが有名ですが、Sinatraのほうがシンプルで単純なのでわかりやすいです。 早速インストール！ 早速インストール！のその前に・・・ RubyがPCにインストールされている必要があります。 インストールの方法はOSによって異なるので、「ruby インストール windows」のように検索して調べてみてください。 Rubyのインストールができたら、早速Sinatraのインストールをしていきましょう。 WindowsならWindows PowerShell、Macならターミナルを起動しましょう。 起動出来たら、下のように打ってみましょう。 gem install sinatra これを入力すると、Sinatra本体のインストールが始まります。 gem install sinatra-contrib で、Sinatra関連の便利ツールもインストールされます。 webサーバーで”Hello World” それでは、定番の”Hello World”を表示するプログラムを書いてみましょう。 どこかに作業用のフォルダーを作ってみましょう。 それから、AtomやVisual Studio Codeなどのテキストエディタでそのフォルダーを開きます。 そして、example.rbというファイルを作り、 require &quot;sinatra&quot; require &quot;sinatra/reloader&quot; get &quot;/&quot; do &quot;Hello World&quot; end と入力しましょう。 次に、example.rbを実行します。 ターミナルなどで、 cd /home/pi/ruby と入力して、フォルダーの中へ移動します（/home/pi/rubyの部分はフォルダーのパスを入力してください） そこで、 ruby example.rb として、example.rbを実行してみましょう。 いろいろログが出てきますが、”Hello World”とは表示されませんね。 また、何も起こらずにコマンドを打つ画面に戻ってしまったら、エラーが発生しているかもしれません。 プログラムの中身や手順をよく確認してみてください。 うまくいってたら、すでにサーバーが起動しています！ ブラウザで、https://localhost:4567/にアクセスしてみると・・・ どうでしょうか？ Hello Worldと表示されたら成功です！ プログラムの構造 もう一度、さっきのプログラムを見てみましょう require &quot;sinatra&quot; require &quot;sinatra/reloader&quot; get &quot;/&quot; do &quot;Hello World&quot; end 1行目：Sinatraを読み込む 2行目：実行中にファイルが変更された場合、その変更を反映するツールを読み込む 4行目：”/”の要求を受けたら、 5行目：”Hello World”を返して 6行目：get “/”の処理を終わる こんな感じです。 6行目”Hello World”の部分を変更すると、どうなるでしょうか？ 7行目”/”の部分を変更すると、どうなるでしょうか？ いろいろ試してみましょう！ 改造のポイント get &quot;/&quot; do &quot;Hello World&quot; end の部分では、do~endの間に”Hello World”という文字列しかないですが、ここには処理を書き込むこともできます。 Rubyの処理を書き込めるので、いろいろ調べて試してみてください！ 試しにカウント機能作ってみました。 require &quot;sinatra&quot; require &quot;sinatra/reloader&quot; i = 0 get &quot;/&quot; do i = i + 1 &quot;#{i}&quot; end 一回読み込むごとに、表示される数字が増えていきます！ このように、いろいろ改造してみましょう！ 報告 現在、ブログのタグ機能がうまく機能していません。 工夫して実装したのですが、GitHub Pagesではうまく動かないようです。 そのため、代わりの方法を考えています。 タグ機能の復活までしばらくお待ちください。</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://koshiscience.github.io/img/2020-01-27-koshischool.jpg" /><media:content medium="image" url="https://koshiscience.github.io/img/2020-01-27-koshischool.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">IchigoJamを使ってキラキラアクセサリーを作ろう！</title><link href="https://koshiscience.github.io/2020/03/26/kirakira.html" rel="alternate" type="text/html" title="IchigoJamを使ってキラキラアクセサリーを作ろう！" /><published>2020-03-26T00:00:00+00:00</published><updated>2020-03-26T00:00:00+00:00</updated><id>https://koshiscience.github.io/2020/03/26/kirakira</id><content type="html" xml:base="https://koshiscience.github.io/2020/03/26/kirakira.html">&lt;h1 id=&quot;はじめに&quot;&gt;はじめに&lt;/h1&gt;
+&lt;p&gt;こんにちは。&lt;/p&gt;
+
+&lt;p&gt;IchigoJamチームです。&lt;/p&gt;
+
+&lt;p&gt;突然ですが、最近IchigoJamのOSが新しくなったことをご存じですか？&lt;/p&gt;
+
+&lt;p&gt;12月に、&lt;a href=&quot;https://fukuno.jig.jp&quot;&gt;福野さん&lt;/a&gt;がIchigoJam 1.4を正式リリースしました。&lt;/p&gt;
+
+&lt;p&gt;このアップデートでたくさんの機能がIchigoJamに追加されたのですが、今回はその中の&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS.LED&lt;/code&gt;コマンドを使って、お手軽キラキラアクセサリーを作りましょう！&lt;/p&gt;
+
+&lt;h1 id=&quot;準備するもの&quot;&gt;準備するもの&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ichigojam(BASIC 1.4が書き込み済み。書き込み方法については&lt;a href=&quot;https://15jamrecipe.jimdofree.com/%E5%91%A8%E8%BE%BA%E6%A9%9F%E5%99%A8/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E3%81%A8%E6%8E%A5%E7%B6%9A/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E6%9B%B4%E6%96%B0/&quot;&gt;こちら&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;WS2812B内蔵LEDテープ(amazonなどで「WS2812B LEDテープ」などと検索してみてください)&lt;/li&gt;
+  &lt;li&gt;IchigoJamでプログラミングする環境&lt;/li&gt;
+  &lt;li&gt;モバイルバッテリーもしくは電池ボックスと乾電池(3本)&lt;/li&gt;
+  &lt;li&gt;はんだごてや導線(LEDテープを必要な長さに調節するのに使います)&lt;/li&gt;
+  &lt;li&gt;あれば、装飾したいマフラー、帽子など&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;ledテープの準備&quot;&gt;LEDテープの準備&lt;/h1&gt;
+&lt;p&gt;まず、どこをどのように装飾するのかを考えます。&lt;/p&gt;
+
+&lt;p&gt;LEDテープは33個までに収めてください。&lt;/p&gt;
+
+&lt;p&gt;次に、必要な長さにカットします。&lt;/p&gt;
+
+&lt;p&gt;そして各端子に導線をはんだ付けして準備完了です。&lt;/p&gt;
+
+&lt;h1 id=&quot;プログラミング&quot;&gt;プログラミング&lt;/h1&gt;
+&lt;p&gt;IchigoJamにプログラミングしていきます。&lt;/p&gt;
+
+&lt;p&gt;まず、SAVE0にあるプログラムを退避させてください。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WS.LED {数1}&lt;/code&gt;コマンドは、配列を最初から参照し、３つずつ読み取ってその３つの値をred、green、blueと認識して、光らせていきます。&lt;/p&gt;
+
+&lt;p&gt;一番単純な、全部のLEDをランダムに光らせるプログラムはこれです&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1 @ARUN
+10 FORI=0TO29:[I]=RND(100):NEXT:WS.LED10:WAIT10:CONT
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SAVE0&lt;/code&gt;して保存してください。&lt;/p&gt;
+
+&lt;p&gt;他にも、自分でいろいろ試してみてください。&lt;/p&gt;
+
+&lt;h1 id=&quot;接続&quot;&gt;接続&lt;/h1&gt;
+&lt;p&gt;IchigoJam側の端子と、LEDテープ側の端子を接続していきます。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;IchigoJam側&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;LEDテープ側&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;GND&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;GND&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5V&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;VCC&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;LED&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;DO&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;上を参考に配線してみてください。&lt;/p&gt;
+
+&lt;p&gt;この状態で、IchigoJamの電源を入れると動き出します。&lt;/p&gt;
+
+&lt;p&gt;プログラムの最初に「@ARUN」という記述をしてSAVE0に保存すると、起動時に自動実行されるからです。(IchigoJam 1.4の新機能)&lt;/p&gt;
+
+&lt;p&gt;持ち運べるようにするには、モバイルバッテリーをつなげるか、乾電池の＋をIchigoJamの5Vに、ーをIchigoJamのGNDにさしてください。&lt;/p&gt;
+
+&lt;h1 id=&quot;完成&quot;&gt;完成&lt;/h1&gt;
+&lt;p&gt;僕たちは、ネックウォーマーや帽子にLEDをつけて遊びました！&lt;/p&gt;
+
+&lt;p&gt;プログラムの設定で、かなり明るくなるようにしてあるので、結構まぶしいです。&lt;/p&gt;
+
+&lt;p&gt;そのあたりは、自分で試して変更してください。&lt;/p&gt;
+
+&lt;p&gt;このキラキラアクセサリーで、パーティーなどを盛り上げよう！&lt;/p&gt;</content><author><name></name></author><category term="IchigoJam" /><category term="programming" /><summary type="html">はじめに こんにちは。 IchigoJamチームです。 突然ですが、最近IchigoJamのOSが新しくなったことをご存じですか？ 12月に、福野さんがIchigoJam 1.4を正式リリースしました。 このアップデートでたくさんの機能がIchigoJamに追加されたのですが、今回はその中のWS.LEDコマンドを使って、お手軽キラキラアクセサリーを作りましょう！ 準備するもの Ichigojam(BASIC 1.4が書き込み済み。書き込み方法についてはこちら) WS2812B内蔵LEDテープ(amazonなどで「WS2812B LEDテープ」などと検索してみてください) IchigoJamでプログラミングする環境 モバイルバッテリーもしくは電池ボックスと乾電池(3本) はんだごてや導線(LEDテープを必要な長さに調節するのに使います) あれば、装飾したいマフラー、帽子など LEDテープの準備 まず、どこをどのように装飾するのかを考えます。 LEDテープは33個までに収めてください。 次に、必要な長さにカットします。 そして各端子に導線をはんだ付けして準備完了です。 プログラミング IchigoJamにプログラミングしていきます。 まず、SAVE0にあるプログラムを退避させてください。 WS.LED {数1}コマンドは、配列を最初から参照し、３つずつ読み取ってその３つの値をred、green、blueと認識して、光らせていきます。 一番単純な、全部のLEDをランダムに光らせるプログラムはこれです 1 @ARUN 10 FORI=0TO29:[I]=RND(100):NEXT:WS.LED10:WAIT10:CONT SAVE0して保存してください。 他にも、自分でいろいろ試してみてください。 接続 IchigoJam側の端子と、LEDテープ側の端子を接続していきます。 IchigoJam側 LEDテープ側 GND GND 5V VCC LED DO 上を参考に配線してみてください。 この状態で、IchigoJamの電源を入れると動き出します。 プログラムの最初に「@ARUN」という記述をしてSAVE0に保存すると、起動時に自動実行されるからです。(IchigoJam 1.4の新機能) 持ち運べるようにするには、モバイルバッテリーをつなげるか、乾電池の＋をIchigoJamの5Vに、ーをIchigoJamのGNDにさしてください。 完成 僕たちは、ネックウォーマーや帽子にLEDをつけて遊びました！ プログラムの設定で、かなり明るくなるようにしてあるので、結構まぶしいです。 そのあたりは、自分で試して変更してください。 このキラキラアクセサリーで、パーティーなどを盛り上げよう！</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://koshiscience.github.io/img/2020-08-12-led_handspinner.jpg" /><media:content medium="image" url="https://koshiscience.github.io/img/2020-08-12-led_handspinner.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">はじめまして！</title><link href="https://koshiscience.github.io/2020/03/26/first.html" rel="alternate" type="text/html" title="はじめまして！" /><published>2020-03-26T00:00:00+00:00</published><updated>2020-03-26T00:00:00+00:00</updated><id>https://koshiscience.github.io/2020/03/26/first</id><content type="html" xml:base="https://koshiscience.github.io/2020/03/26/first.html">&lt;h1 id=&quot;はじめまして&quot;&gt;はじめまして！&lt;/h1&gt;
+&lt;p&gt;こんにちは。&lt;/p&gt;
+
+&lt;p&gt;福井県立高志中学校サイエンス部です。&lt;/p&gt;
+
+&lt;p&gt;この度は、高志中学校サイエンス部のサイトを公開させていただくこととなりました。&lt;/p&gt;
+
+&lt;h2 id=&quot;サイエンス部について&quot;&gt;サイエンス部について&lt;/h2&gt;
+&lt;p&gt;サイエンス部は、面白そうなことや気になることなどについて、研究したり制作したりしている部活です。&lt;/p&gt;
+
+&lt;h2 id=&quot;公開に至る経緯&quot;&gt;公開に至る経緯&lt;/h2&gt;
+&lt;p&gt;サイエンス部の中に、今年からできた、IchigoJamなどをメインに行っている「IchigoJamチーム」があるのですが、&lt;a href=&quot;https://fukuno.jig.jp&quot;&gt;福野さん&lt;/a&gt;に「サイエンス部で記事を書いて公開してみたらどう？」というアドバイスを頂いたので、このサイトを開設させていただきました。&lt;/p&gt;
+
+&lt;h2 id=&quot;今のサイエンス部のチーム&quot;&gt;今のサイエンス部のチーム&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;IchigoJamチーム
+    &lt;ul&gt;
+      &lt;li&gt;前述のとおり、IchigoJamをメインに行っているチームですが、プログラミングや電子工作関連には何でも手を出しています。&lt;/li&gt;
+      &lt;li&gt;大事にしてるのは、面白そうなことをやってみよう！です&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;缶サット(cansat)チーム
+    &lt;ul&gt;
+      &lt;li&gt;空き缶サイズの模擬人工衛星、缶サットについての研究・制作を行っています。&lt;/li&gt;
+      &lt;li&gt;今年は缶サット甲子園出場を目指します！&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;シャー芯フィラメントチーム
+    &lt;ul&gt;
+      &lt;li&gt;シャープペンシルの芯に電気を通して、発光させる研究・実験をしています。&lt;/li&gt;
+      &lt;li&gt;目指せ、10分以上発光！&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;今後とも、僕たちサイエンス部の応援をよろしくお願いします！&lt;/p&gt;</content><author><name></name></author><category term="science-club" /><summary type="html">はじめまして！ こんにちは。 福井県立高志中学校サイエンス部です。 この度は、高志中学校サイエンス部のサイトを公開させていただくこととなりました。 サイエンス部について サイエンス部は、面白そうなことや気になることなどについて、研究したり制作したりしている部活です。 公開に至る経緯 サイエンス部の中に、今年からできた、IchigoJamなどをメインに行っている「IchigoJamチーム」があるのですが、福野さんに「サイエンス部で記事を書いて公開してみたらどう？」というアドバイスを頂いたので、このサイトを開設させていただきました。 今のサイエンス部のチーム IchigoJamチーム 前述のとおり、IchigoJamをメインに行っているチームですが、プログラミングや電子工作関連には何でも手を出しています。 大事にしてるのは、面白そうなことをやってみよう！です 缶サット(cansat)チーム 空き缶サイズの模擬人工衛星、缶サットについての研究・制作を行っています。 今年は缶サット甲子園出場を目指します！ シャー芯フィラメントチーム シャープペンシルの芯に電気を通して、発光させる研究・実験をしています。 目指せ、10分以上発光！ 今後とも、僕たちサイエンス部の応援をよろしくお願いします！</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://koshiscience.github.io/img/2020-01-27-koshischool.jpg" /><media:content medium="image" url="https://koshiscience.github.io/img/2020-01-27-koshischool.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
