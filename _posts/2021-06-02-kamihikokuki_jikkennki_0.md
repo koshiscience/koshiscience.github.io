@@ -1,12 +1,10 @@
 ---
-  title: 紙飛行機実験機 ＃0
+  title: 紙飛行機実験記 ＃0
   tags:
   - air-plane
   image: /img/2021-06-02-kamihikouki_omote.png
 ---
-# 紙飛行機実験記 ＃0
-
-みなさん初めまして！
+# みなさん初めまして！
 
 私たちは**紙飛行機部門**です！
 
