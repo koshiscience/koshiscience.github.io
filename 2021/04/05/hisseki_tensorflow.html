@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+<title>
+  
+    CNNを導入して筆跡鑑定の認識精度100%を達成！ | 高志中学校サイエンス部
+  
+</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="CNNを導入して筆跡鑑定の認識精度100%を達成！" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="お久しぶりです こんにちは。 筆跡鑑定チームです。 このチームはIchigoJamチームから派生したチームで、「筆跡鑑定によるユーザー認証」というテーマで研究を行っています。 筆跡鑑定によるユーザー認証 まず初めに、筆跡鑑定によるユーザー認証について説明します。 この研究は、パスワードや指紋などで行われるユーザー認証を、人工知能による筆跡鑑定に置き換えようというアイデアを基に研究を行っています。 筆跡鑑定に置き換えることによって、 タッチパネルで認証を行えるため、高価なセンサーなどを用いずに、既存のデバイスで認証できる 手袋などをつけていても認証できる 偽造しにくい などの利点があります。 この筆跡鑑定を、人工知能の技術で行うためにはどうすればいいかについて、現在研究を進めています。 目標 実現したときのイメージを説明します。 ユーザー登録：自分の名前の筆跡を10枚程度登録してもらう（これを本人かどうかの判断基準に使う） 認証：筆跡のみを要求→それをもとにどのユーザーか＆本人かを判定する ニューラルネットワークとは？ その前に・・・・・・ 機械学習とは？ 機械学習について説明します。 機械学習とは、経験からの学習により自動で改善するコンピューターアルゴリズムもしくはその研究領域（Wikipediaより）のことで、人工知能の一種です。 簡単に言うと、人間みたいに、見たり聞いたりしたものをもとに成長していく仕組みです。 訓練データと呼ばれるデータを読み込み学習し、それをもとに何かを判定したり動かしたりします。 勉強に例えると、 とりあえず、わからないなりに教科書の問題（教師データ）を解いてみる 間違えたところを訂正する 1~3を繰り返す ある程度力がついてきたらテスト（テストデータ）で最終的な実力を測る 実際に学習内容を様々な場面で活用していく みたいな具合です。 ニューラルネットワークとは？ 機械学習のアルゴリズムの一つで、脳の神経伝達の仕組みを模したものです。 こちらのサイトに詳しい解説があります。 僕たちは、このニューラルネットワークというアルゴリズムを用いて、筆跡鑑定できないかと試行錯誤してきました。 シンプルなニューラルネットワーク 最初に僕たちが試した、シンプルなニューラルネットワークによる筆跡鑑定について説明します。 環境 Ruby 2.7（プログラミング言語） scikit-learn 0.22（機械学習ライブラリ、機械学習の便利ツールの詰め合わせ） PyCall（scikit-learnをRubyから呼びだすためのライブラリ） scikit-learnは本来、Pythonというプログラミング言語のためのライブラリで、Rubyで使うことはできません。 ですが、最終的にwebアプリにすることを考え、サーバーに強いRubyからPyCallを用いてscikit-learnを使うことにしました。 PyCallを用いた実装 PyCallを用いると、PythonのライブラリをRubyから呼び出して使うことができます。 PyCallの読み込み（Ruby） require &quot;pycall/import&quot; include PyCall::Import ※事前にRubyとPython、またPyCallと使いたいPythonのライブラリがインストールされている環境でないと動きません。 PyCallを読み込めば、pyimportやpyfromなどのメソッドが使えるようになり、Pythonのライブラリを読み込んで動かすことができるようになります。 Pythonのライブラリのチュートリアルやドキュメントのコードは、Pythonで書かれているためうまくRubyに書き換える必要があります。 ライブラリの読み込み（Python） # scikit-learnの例 import sklearn.neural_network import MLPClassifier # TensorFlowの例 from tensorflow import keras from tensorflow.keras import datasets, layers, models # そのほかのライブラリの例 import numpy as np （Ruby） # scikit-learnの例 pyimport &quot;sklearn.neural_network&quot;, import: &quot;MLPClassifier&quot; # Tensorflowの例 pyfrom &quot;tensorflow&quot;, import: &quot;keras&quot; pyfrom &quot;tensorflow.keras&quot;, import: [&quot;datasets&quot;, &quot;layers&quot;, &quot;models&quot;] # 複数指定するときは配列を使う # そのほかのライブラリの例 pyimport &quot;numpy&quot;, as: &quot;numpy&quot; # &quot;文字列&quot; の代わりに :シンボル を用いることもできる pyfrom :tensorflow, import: :keras # コンマが入る場合は &quot;文字列&quot; を使う、配列でも :シンボル を使える pyfrom &quot;tensorflow.keras&quot;, import: [:datasets, :layers, :models] インスタンスを作る（Python） # scikit-learnのニューラルネットワークの例 estimator = MLPClassifier( solver=&quot;lbfgs&quot;, activation=&quot;logistic&quot;, alpha=1e-5, hidden_layer_sizes=(5, 2), random_state=1 ) （Ruby） # scikit-learnのニューラルネットワークの例 estimator = MLPClassifier.new( # .newをつける solver: &quot;lbfgs&quot;, # =ではなく:を用いる activation: :logistic, # :シンボル も使える alpha: 1e-5, # 指数表現はそのままでも問題なし hidden_layer_sizes: [5, 2], # タプル（配列のようなもの）は配列で表現 random_state: 1 ) 関数を呼び出す（Python) # scikit-learnの学習させる関数 estimator.fit(images, labels) （Ruby） # scikit-learnの学習させる関数 estimator.fit images, labels # 括弧はなくてもよい テストの条件 筆跡データ 1人につき、教師データ：30枚、テストデータ：10枚の合計40枚の√記号を用いります。 これを2人分集めました。 ↑こんな感じ 人によって癖がかなりある√記号は、機械にとって認識しやすいためこの記号を用いりました。 今回はあくまでもテストなので、傾向などをつかむために良い結果が出やすいように機械に有利な条件で進めていきました。 検証方法 別の2人が書いた筆跡を、どちらが書いたものか分類する精度を測ります。 まず、教師データを分類器に学習させます。 教師データはどちらが書いたかのラベルが貼ってあり、分類器はどちらが書いたかを認識できます。 学習出来たら、テストデータで分類させて、どのくらい分類できるのかを検証します。 検証結果 いろいろなハイパーパラメータ（最初に設定しなければいけないパラメータ）を試したところ、最大で平均約80%の予測精度を達成しました。 ネットワークの設定 estimator = MLPClassifier.new( hidden_layer_sizes: [64, 128], activation: &quot;tanh&quot;, solver: &quot;lbfgs&quot;, max_iter: 100000, tol: 0.0001 ) scikit-learnのパラメータですが、表記方法はRubyになっています。 畳み込みニューラルネットワーク（CNN） ですが、80%の予測精度ではとても個人情報や金銭がかかっているユーザー認証で実用できる精度ではないので、画像認識に有利と言われている畳み込みニューラルネットワークを導入しました。 畳み込みニューラルネットワークは、ニューラルネットワークに人間の物体認識の仕組みのモデルを追加したもので、現在のAIブームの引き金となったものです。 これについてもこちらのサイトに詳しい解説があります。 環境 Ruby 2.7（プログラミング言語） TensorFlow 2.4（機械学習ライブラリ） PyCall（scikit-learnをRubyから呼びだすためのライブラリ） プログラミング言語は変わらないのですが、ライブラリをscikit-learnからTensorFlowに変更しました。 TensorFlowの方が、よりニューラルネットワーク向きで、ネットワークの層ごとに細かくいろいろなハイパーパラメータを設定出来るなどの利点があります。 その中でも、畳み込みニューラルネットワークを簡単に使うことができるのは大きな利点です。 検証結果 まず試しに、このチュートリアルをもとにCNNのネットワークを設定し、集めた筆跡データで認識するようにしたところ、いきなり100%の精度を出すことができました。 ネットワークの設定 model = models.Sequential.new([ layers.Conv2D.new(64, [5, 5], activation: :relu, input_shape: [128, 118, 1]), layers.MaxPooling2D.new([4, 4]), layers.Conv2D.new(64, [5, 5], activation: :relu), layers.MaxPooling2D.new([4, 4]), layers.Conv2D.new(32, [5, 5], activation: :relu), layers.Flatten.new, layers.Dense.new(128, activation: :relu), layers.Dense.new(members.length, activation: :softmax) ]) もちろん、条件は先ほどのscikit-learnの時と変わりません。 教師データとテストデータを入れ替えたりして何度かやってみても、100%の結果が変わることはありませんでした。 さらには、2人の分類からもう1人分の筆跡を増やして、3人の分類に変更しても100%の結果が変わることはありませんでした。 このことから、CNNは画像認識においてかなり強力であることを実感しました。 今後の課題 今回、CNNを使うとかなり高い精度を実現することが可能だとわかりました。 ですが、まだまだハイパーパラメータはとりあえずでチュートリアルのものを使っているだけで、少ししか調整していません。 また、分類する人数は3人と、実用には及ばないレベルなのでもっと増やしても精度を保てることを確認しなければなりません。 人数を増やすと、認識精度以外にも処理速度などもかなり低下する恐れがあります。 計算速度と精度のバランスを、ハイパーパラメータで調整する必要が出てくるでしょう。 目標は10人の筆跡を100%に近い精度で分類できるようにすることです。 実際にユーザー認証システムを実装する場合は、名前でまず分類して、その中で誰の筆跡か分類することになるでしょう。 同姓同名の人は、平均約4人（このサイトより）とかなり少ないため、同じ文字列が記入されている筆跡を分類する場合は10人ほどを正確に分類できれば十分だろう考えたため、10人を目標にしました。 これを目標に、研究を頑張っていきます！ 今後も、僕たちの応援よろしくお願いします！" />
+<meta property="og:description" content="お久しぶりです こんにちは。 筆跡鑑定チームです。 このチームはIchigoJamチームから派生したチームで、「筆跡鑑定によるユーザー認証」というテーマで研究を行っています。 筆跡鑑定によるユーザー認証 まず初めに、筆跡鑑定によるユーザー認証について説明します。 この研究は、パスワードや指紋などで行われるユーザー認証を、人工知能による筆跡鑑定に置き換えようというアイデアを基に研究を行っています。 筆跡鑑定に置き換えることによって、 タッチパネルで認証を行えるため、高価なセンサーなどを用いずに、既存のデバイスで認証できる 手袋などをつけていても認証できる 偽造しにくい などの利点があります。 この筆跡鑑定を、人工知能の技術で行うためにはどうすればいいかについて、現在研究を進めています。 目標 実現したときのイメージを説明します。 ユーザー登録：自分の名前の筆跡を10枚程度登録してもらう（これを本人かどうかの判断基準に使う） 認証：筆跡のみを要求→それをもとにどのユーザーか＆本人かを判定する ニューラルネットワークとは？ その前に・・・・・・ 機械学習とは？ 機械学習について説明します。 機械学習とは、経験からの学習により自動で改善するコンピューターアルゴリズムもしくはその研究領域（Wikipediaより）のことで、人工知能の一種です。 簡単に言うと、人間みたいに、見たり聞いたりしたものをもとに成長していく仕組みです。 訓練データと呼ばれるデータを読み込み学習し、それをもとに何かを判定したり動かしたりします。 勉強に例えると、 とりあえず、わからないなりに教科書の問題（教師データ）を解いてみる 間違えたところを訂正する 1~3を繰り返す ある程度力がついてきたらテスト（テストデータ）で最終的な実力を測る 実際に学習内容を様々な場面で活用していく みたいな具合です。 ニューラルネットワークとは？ 機械学習のアルゴリズムの一つで、脳の神経伝達の仕組みを模したものです。 こちらのサイトに詳しい解説があります。 僕たちは、このニューラルネットワークというアルゴリズムを用いて、筆跡鑑定できないかと試行錯誤してきました。 シンプルなニューラルネットワーク 最初に僕たちが試した、シンプルなニューラルネットワークによる筆跡鑑定について説明します。 環境 Ruby 2.7（プログラミング言語） scikit-learn 0.22（機械学習ライブラリ、機械学習の便利ツールの詰め合わせ） PyCall（scikit-learnをRubyから呼びだすためのライブラリ） scikit-learnは本来、Pythonというプログラミング言語のためのライブラリで、Rubyで使うことはできません。 ですが、最終的にwebアプリにすることを考え、サーバーに強いRubyからPyCallを用いてscikit-learnを使うことにしました。 PyCallを用いた実装 PyCallを用いると、PythonのライブラリをRubyから呼び出して使うことができます。 PyCallの読み込み（Ruby） require &quot;pycall/import&quot; include PyCall::Import ※事前にRubyとPython、またPyCallと使いたいPythonのライブラリがインストールされている環境でないと動きません。 PyCallを読み込めば、pyimportやpyfromなどのメソッドが使えるようになり、Pythonのライブラリを読み込んで動かすことができるようになります。 Pythonのライブラリのチュートリアルやドキュメントのコードは、Pythonで書かれているためうまくRubyに書き換える必要があります。 ライブラリの読み込み（Python） # scikit-learnの例 import sklearn.neural_network import MLPClassifier # TensorFlowの例 from tensorflow import keras from tensorflow.keras import datasets, layers, models # そのほかのライブラリの例 import numpy as np （Ruby） # scikit-learnの例 pyimport &quot;sklearn.neural_network&quot;, import: &quot;MLPClassifier&quot; # Tensorflowの例 pyfrom &quot;tensorflow&quot;, import: &quot;keras&quot; pyfrom &quot;tensorflow.keras&quot;, import: [&quot;datasets&quot;, &quot;layers&quot;, &quot;models&quot;] # 複数指定するときは配列を使う # そのほかのライブラリの例 pyimport &quot;numpy&quot;, as: &quot;numpy&quot; # &quot;文字列&quot; の代わりに :シンボル を用いることもできる pyfrom :tensorflow, import: :keras # コンマが入る場合は &quot;文字列&quot; を使う、配列でも :シンボル を使える pyfrom &quot;tensorflow.keras&quot;, import: [:datasets, :layers, :models] インスタンスを作る（Python） # scikit-learnのニューラルネットワークの例 estimator = MLPClassifier( solver=&quot;lbfgs&quot;, activation=&quot;logistic&quot;, alpha=1e-5, hidden_layer_sizes=(5, 2), random_state=1 ) （Ruby） # scikit-learnのニューラルネットワークの例 estimator = MLPClassifier.new( # .newをつける solver: &quot;lbfgs&quot;, # =ではなく:を用いる activation: :logistic, # :シンボル も使える alpha: 1e-5, # 指数表現はそのままでも問題なし hidden_layer_sizes: [5, 2], # タプル（配列のようなもの）は配列で表現 random_state: 1 ) 関数を呼び出す（Python) # scikit-learnの学習させる関数 estimator.fit(images, labels) （Ruby） # scikit-learnの学習させる関数 estimator.fit images, labels # 括弧はなくてもよい テストの条件 筆跡データ 1人につき、教師データ：30枚、テストデータ：10枚の合計40枚の√記号を用いります。 これを2人分集めました。 ↑こんな感じ 人によって癖がかなりある√記号は、機械にとって認識しやすいためこの記号を用いりました。 今回はあくまでもテストなので、傾向などをつかむために良い結果が出やすいように機械に有利な条件で進めていきました。 検証方法 別の2人が書いた筆跡を、どちらが書いたものか分類する精度を測ります。 まず、教師データを分類器に学習させます。 教師データはどちらが書いたかのラベルが貼ってあり、分類器はどちらが書いたかを認識できます。 学習出来たら、テストデータで分類させて、どのくらい分類できるのかを検証します。 検証結果 いろいろなハイパーパラメータ（最初に設定しなければいけないパラメータ）を試したところ、最大で平均約80%の予測精度を達成しました。 ネットワークの設定 estimator = MLPClassifier.new( hidden_layer_sizes: [64, 128], activation: &quot;tanh&quot;, solver: &quot;lbfgs&quot;, max_iter: 100000, tol: 0.0001 ) scikit-learnのパラメータですが、表記方法はRubyになっています。 畳み込みニューラルネットワーク（CNN） ですが、80%の予測精度ではとても個人情報や金銭がかかっているユーザー認証で実用できる精度ではないので、画像認識に有利と言われている畳み込みニューラルネットワークを導入しました。 畳み込みニューラルネットワークは、ニューラルネットワークに人間の物体認識の仕組みのモデルを追加したもので、現在のAIブームの引き金となったものです。 これについてもこちらのサイトに詳しい解説があります。 環境 Ruby 2.7（プログラミング言語） TensorFlow 2.4（機械学習ライブラリ） PyCall（scikit-learnをRubyから呼びだすためのライブラリ） プログラミング言語は変わらないのですが、ライブラリをscikit-learnからTensorFlowに変更しました。 TensorFlowの方が、よりニューラルネットワーク向きで、ネットワークの層ごとに細かくいろいろなハイパーパラメータを設定出来るなどの利点があります。 その中でも、畳み込みニューラルネットワークを簡単に使うことができるのは大きな利点です。 検証結果 まず試しに、このチュートリアルをもとにCNNのネットワークを設定し、集めた筆跡データで認識するようにしたところ、いきなり100%の精度を出すことができました。 ネットワークの設定 model = models.Sequential.new([ layers.Conv2D.new(64, [5, 5], activation: :relu, input_shape: [128, 118, 1]), layers.MaxPooling2D.new([4, 4]), layers.Conv2D.new(64, [5, 5], activation: :relu), layers.MaxPooling2D.new([4, 4]), layers.Conv2D.new(32, [5, 5], activation: :relu), layers.Flatten.new, layers.Dense.new(128, activation: :relu), layers.Dense.new(members.length, activation: :softmax) ]) もちろん、条件は先ほどのscikit-learnの時と変わりません。 教師データとテストデータを入れ替えたりして何度かやってみても、100%の結果が変わることはありませんでした。 さらには、2人の分類からもう1人分の筆跡を増やして、3人の分類に変更しても100%の結果が変わることはありませんでした。 このことから、CNNは画像認識においてかなり強力であることを実感しました。 今後の課題 今回、CNNを使うとかなり高い精度を実現することが可能だとわかりました。 ですが、まだまだハイパーパラメータはとりあえずでチュートリアルのものを使っているだけで、少ししか調整していません。 また、分類する人数は3人と、実用には及ばないレベルなのでもっと増やしても精度を保てることを確認しなければなりません。 人数を増やすと、認識精度以外にも処理速度などもかなり低下する恐れがあります。 計算速度と精度のバランスを、ハイパーパラメータで調整する必要が出てくるでしょう。 目標は10人の筆跡を100%に近い精度で分類できるようにすることです。 実際にユーザー認証システムを実装する場合は、名前でまず分類して、その中で誰の筆跡か分類することになるでしょう。 同姓同名の人は、平均約4人（このサイトより）とかなり少ないため、同じ文字列が記入されている筆跡を分類する場合は10人ほどを正確に分類できれば十分だろう考えたため、10人を目標にしました。 これを目標に、研究を頑張っていきます！ 今後も、僕たちの応援よろしくお願いします！" />
+<link rel="canonical" href="https://koshiscience.github.io/pages/koshiscience/2021/04/05/hisseki_tensorflow.html" />
+<meta property="og:url" content="https://koshiscience.github.io/pages/koshiscience/2021/04/05/hisseki_tensorflow.html" />
+<meta property="og:site_name" content="高志中学校サイエンス部" />
+<meta property="og:image" content="https://koshiscience.github.io/pages/koshiscience/img/2020-04-03-header.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-05T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://koshiscience.github.io/pages/koshiscience/img/2020-04-03-header.png" />
+<meta property="twitter:title" content="CNNを導入して筆跡鑑定の認識精度100%を達成！" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-04-05T00:00:00+00:00","datePublished":"2021-04-05T00:00:00+00:00","description":"お久しぶりです こんにちは。 筆跡鑑定チームです。 このチームはIchigoJamチームから派生したチームで、「筆跡鑑定によるユーザー認証」というテーマで研究を行っています。 筆跡鑑定によるユーザー認証 まず初めに、筆跡鑑定によるユーザー認証について説明します。 この研究は、パスワードや指紋などで行われるユーザー認証を、人工知能による筆跡鑑定に置き換えようというアイデアを基に研究を行っています。 筆跡鑑定に置き換えることによって、 タッチパネルで認証を行えるため、高価なセンサーなどを用いずに、既存のデバイスで認証できる 手袋などをつけていても認証できる 偽造しにくい などの利点があります。 この筆跡鑑定を、人工知能の技術で行うためにはどうすればいいかについて、現在研究を進めています。 目標 実現したときのイメージを説明します。 ユーザー登録：自分の名前の筆跡を10枚程度登録してもらう（これを本人かどうかの判断基準に使う） 認証：筆跡のみを要求→それをもとにどのユーザーか＆本人かを判定する ニューラルネットワークとは？ その前に・・・・・・ 機械学習とは？ 機械学習について説明します。 機械学習とは、経験からの学習により自動で改善するコンピューターアルゴリズムもしくはその研究領域（Wikipediaより）のことで、人工知能の一種です。 簡単に言うと、人間みたいに、見たり聞いたりしたものをもとに成長していく仕組みです。 訓練データと呼ばれるデータを読み込み学習し、それをもとに何かを判定したり動かしたりします。 勉強に例えると、 とりあえず、わからないなりに教科書の問題（教師データ）を解いてみる 間違えたところを訂正する 1~3を繰り返す ある程度力がついてきたらテスト（テストデータ）で最終的な実力を測る 実際に学習内容を様々な場面で活用していく みたいな具合です。 ニューラルネットワークとは？ 機械学習のアルゴリズムの一つで、脳の神経伝達の仕組みを模したものです。 こちらのサイトに詳しい解説があります。 僕たちは、このニューラルネットワークというアルゴリズムを用いて、筆跡鑑定できないかと試行錯誤してきました。 シンプルなニューラルネットワーク 最初に僕たちが試した、シンプルなニューラルネットワークによる筆跡鑑定について説明します。 環境 Ruby 2.7（プログラミング言語） scikit-learn 0.22（機械学習ライブラリ、機械学習の便利ツールの詰め合わせ） PyCall（scikit-learnをRubyから呼びだすためのライブラリ） scikit-learnは本来、Pythonというプログラミング言語のためのライブラリで、Rubyで使うことはできません。 ですが、最終的にwebアプリにすることを考え、サーバーに強いRubyからPyCallを用いてscikit-learnを使うことにしました。 PyCallを用いた実装 PyCallを用いると、PythonのライブラリをRubyから呼び出して使うことができます。 PyCallの読み込み（Ruby） require &quot;pycall/import&quot; include PyCall::Import ※事前にRubyとPython、またPyCallと使いたいPythonのライブラリがインストールされている環境でないと動きません。 PyCallを読み込めば、pyimportやpyfromなどのメソッドが使えるようになり、Pythonのライブラリを読み込んで動かすことができるようになります。 Pythonのライブラリのチュートリアルやドキュメントのコードは、Pythonで書かれているためうまくRubyに書き換える必要があります。 ライブラリの読み込み（Python） # scikit-learnの例 import sklearn.neural_network import MLPClassifier # TensorFlowの例 from tensorflow import keras from tensorflow.keras import datasets, layers, models # そのほかのライブラリの例 import numpy as np （Ruby） # scikit-learnの例 pyimport &quot;sklearn.neural_network&quot;, import: &quot;MLPClassifier&quot; # Tensorflowの例 pyfrom &quot;tensorflow&quot;, import: &quot;keras&quot; pyfrom &quot;tensorflow.keras&quot;, import: [&quot;datasets&quot;, &quot;layers&quot;, &quot;models&quot;] # 複数指定するときは配列を使う # そのほかのライブラリの例 pyimport &quot;numpy&quot;, as: &quot;numpy&quot; # &quot;文字列&quot; の代わりに :シンボル を用いることもできる pyfrom :tensorflow, import: :keras # コンマが入る場合は &quot;文字列&quot; を使う、配列でも :シンボル を使える pyfrom &quot;tensorflow.keras&quot;, import: [:datasets, :layers, :models] インスタンスを作る（Python） # scikit-learnのニューラルネットワークの例 estimator = MLPClassifier( solver=&quot;lbfgs&quot;, activation=&quot;logistic&quot;, alpha=1e-5, hidden_layer_sizes=(5, 2), random_state=1 ) （Ruby） # scikit-learnのニューラルネットワークの例 estimator = MLPClassifier.new( # .newをつける solver: &quot;lbfgs&quot;, # =ではなく:を用いる activation: :logistic, # :シンボル も使える alpha: 1e-5, # 指数表現はそのままでも問題なし hidden_layer_sizes: [5, 2], # タプル（配列のようなもの）は配列で表現 random_state: 1 ) 関数を呼び出す（Python) # scikit-learnの学習させる関数 estimator.fit(images, labels) （Ruby） # scikit-learnの学習させる関数 estimator.fit images, labels # 括弧はなくてもよい テストの条件 筆跡データ 1人につき、教師データ：30枚、テストデータ：10枚の合計40枚の√記号を用いります。 これを2人分集めました。 ↑こんな感じ 人によって癖がかなりある√記号は、機械にとって認識しやすいためこの記号を用いりました。 今回はあくまでもテストなので、傾向などをつかむために良い結果が出やすいように機械に有利な条件で進めていきました。 検証方法 別の2人が書いた筆跡を、どちらが書いたものか分類する精度を測ります。 まず、教師データを分類器に学習させます。 教師データはどちらが書いたかのラベルが貼ってあり、分類器はどちらが書いたかを認識できます。 学習出来たら、テストデータで分類させて、どのくらい分類できるのかを検証します。 検証結果 いろいろなハイパーパラメータ（最初に設定しなければいけないパラメータ）を試したところ、最大で平均約80%の予測精度を達成しました。 ネットワークの設定 estimator = MLPClassifier.new( hidden_layer_sizes: [64, 128], activation: &quot;tanh&quot;, solver: &quot;lbfgs&quot;, max_iter: 100000, tol: 0.0001 ) scikit-learnのパラメータですが、表記方法はRubyになっています。 畳み込みニューラルネットワーク（CNN） ですが、80%の予測精度ではとても個人情報や金銭がかかっているユーザー認証で実用できる精度ではないので、画像認識に有利と言われている畳み込みニューラルネットワークを導入しました。 畳み込みニューラルネットワークは、ニューラルネットワークに人間の物体認識の仕組みのモデルを追加したもので、現在のAIブームの引き金となったものです。 これについてもこちらのサイトに詳しい解説があります。 環境 Ruby 2.7（プログラミング言語） TensorFlow 2.4（機械学習ライブラリ） PyCall（scikit-learnをRubyから呼びだすためのライブラリ） プログラミング言語は変わらないのですが、ライブラリをscikit-learnからTensorFlowに変更しました。 TensorFlowの方が、よりニューラルネットワーク向きで、ネットワークの層ごとに細かくいろいろなハイパーパラメータを設定出来るなどの利点があります。 その中でも、畳み込みニューラルネットワークを簡単に使うことができるのは大きな利点です。 検証結果 まず試しに、このチュートリアルをもとにCNNのネットワークを設定し、集めた筆跡データで認識するようにしたところ、いきなり100%の精度を出すことができました。 ネットワークの設定 model = models.Sequential.new([ layers.Conv2D.new(64, [5, 5], activation: :relu, input_shape: [128, 118, 1]), layers.MaxPooling2D.new([4, 4]), layers.Conv2D.new(64, [5, 5], activation: :relu), layers.MaxPooling2D.new([4, 4]), layers.Conv2D.new(32, [5, 5], activation: :relu), layers.Flatten.new, layers.Dense.new(128, activation: :relu), layers.Dense.new(members.length, activation: :softmax) ]) もちろん、条件は先ほどのscikit-learnの時と変わりません。 教師データとテストデータを入れ替えたりして何度かやってみても、100%の結果が変わることはありませんでした。 さらには、2人の分類からもう1人分の筆跡を増やして、3人の分類に変更しても100%の結果が変わることはありませんでした。 このことから、CNNは画像認識においてかなり強力であることを実感しました。 今後の課題 今回、CNNを使うとかなり高い精度を実現することが可能だとわかりました。 ですが、まだまだハイパーパラメータはとりあえずでチュートリアルのものを使っているだけで、少ししか調整していません。 また、分類する人数は3人と、実用には及ばないレベルなのでもっと増やしても精度を保てることを確認しなければなりません。 人数を増やすと、認識精度以外にも処理速度などもかなり低下する恐れがあります。 計算速度と精度のバランスを、ハイパーパラメータで調整する必要が出てくるでしょう。 目標は10人の筆跡を100%に近い精度で分類できるようにすることです。 実際にユーザー認証システムを実装する場合は、名前でまず分類して、その中で誰の筆跡か分類することになるでしょう。 同姓同名の人は、平均約4人（このサイトより）とかなり少ないため、同じ文字列が記入されている筆跡を分類する場合は10人ほどを正確に分類できれば十分だろう考えたため、10人を目標にしました。 これを目標に、研究を頑張っていきます！ 今後も、僕たちの応援よろしくお願いします！","headline":"CNNを導入して筆跡鑑定の認識精度100%を達成！","image":"https://koshiscience.github.io/pages/koshiscience/img/2020-04-03-header.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://koshiscience.github.io/pages/koshiscience/2021/04/05/hisseki_tensorflow.html"},"url":"https://koshiscience.github.io/pages/koshiscience/2021/04/05/hisseki_tensorflow.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+<!-- bootstrap読み込み -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link type="application/atom+xml" rel="alternate" href="https://koshiscience.github.io/pages/koshiscience/feed.xml" title="高志中学校サイエンス部" />
+<meta name="google-site-verification" content="-9SuY6z4NWerDbrslcklClEu9XbclQp763RT0_m5-nY" />
+<!-- highlight.js読み込み -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- css適用 -->
+<link rel="stylesheet" href="/assets/css/default.css">
+
+  </head>
+  <body>
+    <img class="w-100" src="/img/2020-01-27-koshischool.jpg" alt="トップ画像">
+<header>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">高志中学校サイエンス部</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav4">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/post">Blog</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.koshi-h.ed.jp/">高志中学校ホームページ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <br>
+    <div class="container-md">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="card bg-light shadow">
+  
+    <img class="card-img-top" src="/img/2020-04-03-header.png" alt="メイン画像">
+  
+  <div class="card-body">
+    
+    <div class="border-bottom border-seccondary">
+      <h1 class="card-title">CNNを導入して筆跡鑑定の認識精度100%を達成！</h1>
+      
+      2021年04月05日
+      <br>
+      
+      <a type="button" class="btn btn-primary btn-sm m-1" href="/tag/ruby">#Ruby</a>
+      
+      <a type="button" class="btn btn-primary btn-sm m-1" href="/tag/hisseki">#hisseki</a>
+      
+      <a type="button" class="btn btn-primary btn-sm m-1" href="/tag/programming">#programming</a>
+      
+      <br>
+      
+    </div>
+    
+    <h1 id="お久しぶりです">お久しぶりです</h1>
+
+<p>こんにちは。</p>
+
+<p>筆跡鑑定チームです。</p>
+
+<p>このチームはIchigoJamチームから派生したチームで、<strong>「筆跡鑑定によるユーザー認証」</strong>というテーマで研究を行っています。</p>
+
+<h1 id="筆跡鑑定によるユーザー認証">筆跡鑑定によるユーザー認証</h1>
+
+<p>まず初めに、筆跡鑑定によるユーザー認証について説明します。</p>
+
+<p>この研究は、パスワードや指紋などで行われるユーザー認証を、人工知能による筆跡鑑定に置き換えようというアイデアを基に研究を行っています。</p>
+
+<p>筆跡鑑定に置き換えることによって、</p>
+
+<ul>
+  <li>タッチパネルで認証を行えるため、高価なセンサーなどを用いずに、既存のデバイスで認証できる</li>
+  <li>手袋などをつけていても認証できる</li>
+  <li>偽造しにくい</li>
+</ul>
+
+<p>などの利点があります。</p>
+
+<p>この筆跡鑑定を、人工知能の技術で行うためにはどうすればいいかについて、現在研究を進めています。</p>
+
+<h2 id="目標">目標</h2>
+
+<p>実現したときのイメージを説明します。</p>
+
+<ol>
+  <li>
+    <p>ユーザー登録：自分の名前の筆跡を10枚程度登録してもらう（これを本人かどうかの判断基準に使う）</p>
+
+    <p><img src="/img/2021-04-03-hisseki_image.png" alt="筆跡のイメージ" /></p>
+  </li>
+  <li>
+    <p>認証：筆跡のみを要求→それをもとにどのユーザーか＆本人かを判定する</p>
+  </li>
+</ol>
+
+<h1 id="ニューラルネットワークとは">ニューラルネットワークとは？</h1>
+
+<p>その前に・・・・・・</p>
+
+<h2 id="機械学習とは">機械学習とは？</h2>
+
+<p>機械学習について説明します。</p>
+
+<p>機械学習とは、<strong>経験からの学習により自動で改善するコンピューターアルゴリズムもしくはその研究領域</strong>（<a href="https://ja.wikipedia.org/wiki/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92">Wikipedia</a>より）のことで、人工知能の一種です。</p>
+
+<p>簡単に言うと、<strong>人間みたいに、見たり聞いたりしたものをもとに成長していく仕組み</strong>です。</p>
+
+<p><strong>訓練データ</strong>と呼ばれるデータを読み込み学習し、それをもとに何かを判定したり動かしたりします。</p>
+
+<p>勉強に例えると、</p>
+
+<ol>
+  <li>とりあえず、わからないなりに教科書の問題（<strong>教師データ</strong>）を解いてみる</li>
+  <li>間違えたところを訂正する</li>
+  <li>1~3を繰り返す</li>
+  <li>ある程度力がついてきたらテスト（<strong>テストデータ</strong>）で最終的な実力を測る</li>
+  <li>実際に学習内容を様々な場面で活用していく</li>
+</ol>
+
+<p>みたいな具合です。</p>
+
+<h2 id="ニューラルネットワークとは-1">ニューラルネットワークとは？</h2>
+
+<p>機械学習のアルゴリズムの一つで、<strong>脳の神経伝達の仕組みを模したもの</strong>です。</p>
+
+<p><a href="https://aizine.ai/glossary-neural-network/">こちらのサイト</a>に詳しい解説があります。</p>
+
+<p>僕たちは、このニューラルネットワークというアルゴリズムを用いて、筆跡鑑定できないかと試行錯誤してきました。</p>
+
+<h1 id="シンプルなニューラルネットワーク">シンプルなニューラルネットワーク</h1>
+
+<p>最初に僕たちが試した、シンプルなニューラルネットワークによる筆跡鑑定について説明します。</p>
+
+<h2 id="環境">環境</h2>
+
+<ul>
+  <li>Ruby 2.7（プログラミング言語）</li>
+  <li>scikit-learn 0.22（機械学習ライブラリ、機械学習の便利ツールの詰め合わせ）</li>
+  <li>PyCall（scikit-learnをRubyから呼びだすためのライブラリ）</li>
+</ul>
+
+<p>scikit-learnは本来、Pythonというプログラミング言語のためのライブラリで、Rubyで使うことはできません。</p>
+
+<p>ですが、<strong>最終的にwebアプリにすることを考え</strong>、サーバーに強いRubyからPyCallを用いてscikit-learnを使うことにしました。</p>
+
+<h2 id="pycallを用いた実装">PyCallを用いた実装</h2>
+
+<p>PyCallを用いると、PythonのライブラリをRubyから呼び出して使うことができます。</p>
+
+<p>PyCallの読み込み（Ruby）</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">require</span> <span class="s2">"pycall/import"</span>
+<span class="kp">include</span> <span class="no">PyCall</span><span class="o">::</span><span class="no">Import</span>
+</code></pre></div></div>
+
+<p>※事前にRubyとPython、またPyCallと使いたいPythonのライブラリがインストールされている環境でないと動きません。</p>
+
+<p>PyCallを読み込めば、<code class="language-plaintext highlighter-rouge">pyimport</code>や<code class="language-plaintext highlighter-rouge">pyfrom</code>などのメソッドが使えるようになり、Pythonのライブラリを読み込んで動かすことができるようになります。</p>
+
+<p>Pythonのライブラリのチュートリアルやドキュメントのコードは、Pythonで書かれているため<strong>うまくRubyに書き換える</strong>必要があります。</p>
+
+<p>ライブラリの読み込み（Python）</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># scikit-learnの例
+</span><span class="kn">import</span> <span class="nn">sklearn.neural_network</span> <span class="kn">import</span> <span class="nn">MLPClassifier</span>
+
+<span class="c1"># TensorFlowの例
+</span><span class="kn">from</span> <span class="nn">tensorflow</span> <span class="kn">import</span> <span class="n">keras</span>
+<span class="kn">from</span> <span class="nn">tensorflow.keras</span> <span class="kn">import</span> <span class="n">datasets</span><span class="p">,</span> <span class="n">layers</span><span class="p">,</span> <span class="n">models</span>
+
+<span class="c1"># そのほかのライブラリの例
+</span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+</code></pre></div></div>
+
+<p>（Ruby）</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># scikit-learnの例</span>
+<span class="n">pyimport</span> <span class="s2">"sklearn.neural_network"</span><span class="p">,</span> <span class="ss">import: </span><span class="s2">"MLPClassifier"</span>
+
+<span class="c1"># Tensorflowの例</span>
+<span class="n">pyfrom</span> <span class="s2">"tensorflow"</span><span class="p">,</span> <span class="ss">import: </span><span class="s2">"keras"</span>
+<span class="n">pyfrom</span> <span class="s2">"tensorflow.keras"</span><span class="p">,</span> <span class="ss">import: </span><span class="p">[</span><span class="s2">"datasets"</span><span class="p">,</span> <span class="s2">"layers"</span><span class="p">,</span> <span class="s2">"models"</span><span class="p">]</span> <span class="c1"># 複数指定するときは配列を使う</span>
+
+<span class="c1"># そのほかのライブラリの例</span>
+<span class="n">pyimport</span> <span class="s2">"numpy"</span><span class="p">,</span> <span class="ss">as: </span><span class="s2">"numpy"</span>
+
+<span class="c1"># "文字列" の代わりに :シンボル を用いることもできる</span>
+<span class="n">pyfrom</span> <span class="ss">:tensorflow</span><span class="p">,</span> <span class="ss">import: :keras</span>
+<span class="c1"># コンマが入る場合は "文字列" を使う、配列でも :シンボル を使える</span>
+<span class="n">pyfrom</span> <span class="s2">"tensorflow.keras"</span><span class="p">,</span> <span class="ss">import: </span><span class="p">[</span><span class="ss">:datasets</span><span class="p">,</span> <span class="ss">:layers</span><span class="p">,</span> <span class="ss">:models</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>インスタンスを作る（Python）</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># scikit-learnのニューラルネットワークの例
+</span><span class="n">estimator</span> <span class="o">=</span> <span class="n">MLPClassifier</span><span class="p">(</span>
+	<span class="n">solver</span><span class="o">=</span><span class="s">"lbfgs"</span><span class="p">,</span>
+    <span class="n">activation</span><span class="o">=</span><span class="s">"logistic"</span><span class="p">,</span>
+    <span class="n">alpha</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">,</span>
+    <span class="n">hidden_layer_sizes</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+    <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<p>（Ruby）</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># scikit-learnのニューラルネットワークの例</span>
+<span class="n">estimator</span> <span class="o">=</span> <span class="no">MLPClassifier</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span> <span class="c1"># .newをつける</span>
+	<span class="ss">solver: </span><span class="s2">"lbfgs"</span><span class="p">,</span> <span class="c1"># =ではなく:を用いる</span>
+    <span class="ss">activation: :logistic</span><span class="p">,</span> <span class="c1"># :シンボル も使える</span>
+    <span class="ss">alpha: </span><span class="mf">1e-5</span><span class="p">,</span> <span class="c1"># 指数表現はそのままでも問題なし</span>
+    <span class="ss">hidden_layer_sizes: </span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="c1"># タプル（配列のようなもの）は配列で表現</span>
+    <span class="ss">random_state: </span><span class="mi">1</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<p>関数を呼び出す（Python)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># scikit-learnの学習させる関数
+</span><span class="n">estimator</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">images</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>（Ruby）</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># scikit-learnの学習させる関数</span>
+<span class="n">estimator</span><span class="p">.</span><span class="nf">fit</span> <span class="n">images</span><span class="p">,</span> <span class="n">labels</span> <span class="c1"># 括弧はなくてもよい</span>
+</code></pre></div></div>
+
+<h2 id="テストの条件">テストの条件</h2>
+
+<ol>
+  <li>
+    <p>筆跡データ</p>
+
+    <p>1人につき、教師データ：30枚、テストデータ：10枚の合計40枚の√記号を用いります。</p>
+
+    <p>これを2人分集めました。</p>
+
+    <p><img src="/img/2021-04-03-base0.png" alt="筆跡の例" /><img src="/img/2021-04-03-base1.png" alt="筆跡の例" /></p>
+
+    <p>↑こんな感じ</p>
+
+    <p>人によって癖がかなりある√記号は、<strong>機械にとって認識しやすい</strong>ためこの記号を用いりました。</p>
+
+    <p>今回はあくまでもテストなので、<strong>傾向などをつかむために良い結果が出やすいよう</strong>に機械に有利な条件で進めていきました。</p>
+  </li>
+  <li>
+    <p>検証方法</p>
+
+    <p>別の2人が書いた筆跡を、どちらが書いたものか分類する精度を測ります。</p>
+
+    <p>まず、教師データを分類器に学習させます。</p>
+
+    <p>教師データはどちらが書いたかのラベルが貼ってあり、分類器はどちらが書いたかを認識できます。</p>
+
+    <p>学習出来たら、テストデータで分類させて、どのくらい分類できるのかを検証します。</p>
+  </li>
+</ol>
+
+<h2 id="検証結果">検証結果</h2>
+
+<p>いろいろなハイパーパラメータ（最初に設定しなければいけないパラメータ）を試したところ、<strong>最大で平均約80%の予測精度</strong>を達成しました。</p>
+
+<p>ネットワークの設定</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">estimator</span> <span class="o">=</span> <span class="no">MLPClassifier</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span>
+  <span class="ss">hidden_layer_sizes: </span><span class="p">[</span><span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">],</span>
+  <span class="ss">activation: </span><span class="s2">"tanh"</span><span class="p">,</span>
+  <span class="ss">solver: </span><span class="s2">"lbfgs"</span><span class="p">,</span>
+  <span class="ss">max_iter: </span><span class="mi">100000</span><span class="p">,</span>
+  <span class="ss">tol: </span><span class="mf">0.0001</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<p>scikit-learnのパラメータですが、表記方法はRubyになっています。</p>
+
+<h1 id="畳み込みニューラルネットワークcnn">畳み込みニューラルネットワーク（CNN）</h1>
+
+<p>ですが、80%の予測精度では<strong>とても個人情報や金銭がかかっているユーザー認証で実用できる精度</strong>ではないので、画像認識に有利と言われている<strong>畳み込みニューラルネットワーク</strong>を導入しました。</p>
+
+<p>畳み込みニューラルネットワークは、<strong>ニューラルネットワークに人間の物体認識の仕組みのモデルを追加したもの</strong>で、現在のAIブームの引き金となったものです。</p>
+
+<p>これについても<a href="https://www.imagazine.co.jp/%E7%95%B3%E3%81%BF%E8%BE%BC%E3%81%BF%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AE%E3%80%8C%E5%9F%BA%E7%A4%8E%E3%81%AE%E5%9F%BA%E7%A4%8E%E3%80%8D%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99/">こちらのサイト</a>に詳しい解説があります。</p>
+
+<h2 id="環境-1">環境</h2>
+
+<ul>
+  <li>Ruby 2.7（プログラミング言語）</li>
+  <li>TensorFlow 2.4（機械学習ライブラリ）</li>
+  <li>PyCall（scikit-learnをRubyから呼びだすためのライブラリ）</li>
+</ul>
+
+<p>プログラミング言語は変わらないのですが、ライブラリを<strong>scikit-learnからTensorFlowに変更</strong>しました。</p>
+
+<p>TensorFlowの方が、よりニューラルネットワーク向きで、ネットワークの層ごとに細かくいろいろなハイパーパラメータを設定出来るなどの利点があります。</p>
+
+<p>その中でも、<strong>畳み込みニューラルネットワークを簡単に使うことができる</strong>のは大きな利点です。</p>
+
+<h2 id="検証結果-1">検証結果</h2>
+
+<p>まず試しに、<a href="https://www.tensorflow.org/tutorials/images/cnn?hl=ja">このチュートリアル</a>をもとにCNNのネットワークを設定し、集めた筆跡データで認識するようにしたところ、<strong>いきなり100%の精度</strong>を出すことができました。</p>
+
+<p>ネットワークの設定</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">model</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="no">Sequential</span><span class="p">.</span><span class="nf">new</span><span class="p">([</span>
+    <span class="n">layers</span><span class="o">.</span><span class="no">Conv2D</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="ss">activation: :relu</span><span class="p">,</span> <span class="ss">input_shape: </span><span class="p">[</span><span class="mi">128</span><span class="p">,</span> <span class="mi">118</span><span class="p">,</span> <span class="mi">1</span><span class="p">]),</span>
+    <span class="n">layers</span><span class="o">.</span><span class="no">MaxPooling2D</span><span class="p">.</span><span class="nf">new</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">]),</span>
+    <span class="n">layers</span><span class="o">.</span><span class="no">Conv2D</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="ss">activation: :relu</span><span class="p">),</span>
+    <span class="n">layers</span><span class="o">.</span><span class="no">MaxPooling2D</span><span class="p">.</span><span class="nf">new</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">]),</span>
+    <span class="n">layers</span><span class="o">.</span><span class="no">Conv2D</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="ss">activation: :relu</span><span class="p">),</span>
+    <span class="n">layers</span><span class="o">.</span><span class="no">Flatten</span><span class="p">.</span><span class="nf">new</span><span class="p">,</span>
+    <span class="n">layers</span><span class="o">.</span><span class="no">Dense</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="ss">activation: :relu</span><span class="p">),</span>
+    <span class="n">layers</span><span class="o">.</span><span class="no">Dense</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">members</span><span class="p">.</span><span class="nf">length</span><span class="p">,</span> <span class="ss">activation: :softmax</span><span class="p">)</span>
+<span class="p">])</span>
+</code></pre></div></div>
+
+<p>もちろん、条件は先ほどのscikit-learnの時と変わりません。</p>
+
+<p>教師データとテストデータを入れ替えたりして何度かやってみても、100%の結果が変わることはありませんでした。</p>
+
+<p>さらには、2人の分類からもう1人分の筆跡を増やして、<strong>3人の分類に変更しても100%の結果が変わることはありませんでした。</strong></p>
+
+<p>このことから、<strong>CNNは画像認識においてかなり強力</strong>であることを実感しました。</p>
+
+<h1 id="今後の課題">今後の課題</h1>
+
+<p>今回、<strong>CNNを使うとかなり高い精度を実現</strong>することが可能だとわかりました。</p>
+
+<p>ですが、まだまだハイパーパラメータはとりあえずでチュートリアルのものを使っているだけで、少ししか調整していません。</p>
+
+<p>また、分類する人数は3人と、実用には及ばないレベルなのでもっと増やしても精度を保てることを確認しなければなりません。</p>
+
+<p>人数を増やすと、認識精度以外にも処理速度などもかなり低下する恐れがあります。</p>
+
+<p>計算速度と精度のバランスを、ハイパーパラメータで調整する必要が出てくるでしょう。</p>
+
+<p>目標は<strong>10人の筆跡を100%に近い精度で分類できるようにする</strong>ことです。</p>
+
+<p>実際にユーザー認証システムを実装する場合は、名前でまず分類して、その中で誰の筆跡か分類することになるでしょう。</p>
+
+<p>同姓同名の人は、平均約4人（<a href="https://www.insightnow.jp/article/5069?page=2#:~:text=%E3%80%8C%E5%90%8C%E5%A7%93%E5%90%8C%E5%90%8D%E8%BE%9E%E5%85%B8%E3%80%8D%E3%81%AB%E3%81%AF,%E7%A8%8B%E5%BA%A6%E3%81%AA%E3%82%8F%E3%81%91%E3%81%A7%E3%81%82%E3%82%8B%E3%80%82">このサイト</a>より）とかなり少ないため、同じ文字列が記入されている筆跡を分類する場合は10人ほどを正確に分類できれば十分だろう考えたため、10人を目標にしました。</p>
+
+<p>これを目標に、研究を頑張っていきます！</p>
+
+<p>今後も、僕たちの応援よろしくお願いします！</p>
+
+    
+    
+    <div class="border-top border-seccondary">
+      <a href="/2020/09/28/sinatra_first.html">previous<br>お手軽webサーバー、Sinatraはじめのいっぽ！</a>
+    </div>
+    
+    
+    <div class="border-top border-seccondary">
+      <a href="/2021/06/02/kamihikokuki_jikkennki_0.html">next<br>紙飛行機実験記 ＃0</a>
+    </div>
+    
+    
+  </div>
+</div>
+
+        </div>
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-3">
+          <div class="card bg-light shadow">
+  <div class="card-body">
+    <h3 class="card-title">タグ</h3>
+    
+    <a href="/tag/science-club">#science-club</a><br>
+    
+    <a href="/tag/ichigojam">#IchigoJam</a><br>
+    
+    <a href="/tag/programming">#programming</a><br>
+    
+    <a href="/tag/ruby">#Ruby</a><br>
+    
+    <a href="/tag/hisseki">#hisseki</a><br>
+    
+    <a href="/tag/air-plane">#air-plane</a><br>
+    
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

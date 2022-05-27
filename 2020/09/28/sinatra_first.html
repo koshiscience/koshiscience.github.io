@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+<title>
+  
+    お手軽webサーバー、Sinatraはじめのいっぽ！ | 高志中学校サイエンス部
+  
+</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="お手軽webサーバー、Sinatraはじめのいっぽ！" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="webサーバーを作ろう！ こんにちは。高志中学校サイエンス部プログラミング班です。 今回のブログでは、Sinatraというフレームワークを使って、簡単なwebサーバーを作ってみようと思います！ Sinatraってなに？ Sinatraは、Rubyというプログラミング言語で動くwebサーバーフレームワークです。 分かりにくく感じますが、、、簡単に言うと、サーバーを楽に作れるものとなります。 Rubyのwebサーバーフレームワークというと、Ruby on Railsが有名ですが、Sinatraのほうがシンプルで単純なのでわかりやすいです。 早速インストール！ 早速インストール！のその前に・・・ RubyがPCにインストールされている必要があります。 インストールの方法はOSによって異なるので、「ruby インストール windows」のように検索して調べてみてください。 Rubyのインストールができたら、早速Sinatraのインストールをしていきましょう。 WindowsならWindows PowerShell、Macならターミナルを起動しましょう。 起動出来たら、下のように打ってみましょう。 gem install sinatra これを入力すると、Sinatra本体のインストールが始まります。 gem install sinatra-contrib で、Sinatra関連の便利ツールもインストールされます。 webサーバーで”Hello World” それでは、定番の”Hello World”を表示するプログラムを書いてみましょう。 どこかに作業用のフォルダーを作ってみましょう。 それから、AtomやVisual Studio Codeなどのテキストエディタでそのフォルダーを開きます。 そして、example.rbというファイルを作り、 require &quot;sinatra&quot; require &quot;sinatra/reloader&quot; get &quot;/&quot; do &quot;Hello World&quot; end と入力しましょう。 次に、example.rbを実行します。 ターミナルなどで、 cd /home/pi/ruby と入力して、フォルダーの中へ移動します（/home/pi/rubyの部分はフォルダーのパスを入力してください） そこで、 ruby example.rb として、example.rbを実行してみましょう。 いろいろログが出てきますが、”Hello World”とは表示されませんね。 また、何も起こらずにコマンドを打つ画面に戻ってしまったら、エラーが発生しているかもしれません。 プログラムの中身や手順をよく確認してみてください。 うまくいってたら、すでにサーバーが起動しています！ ブラウザで、https://localhost:4567/にアクセスしてみると・・・ どうでしょうか？ Hello Worldと表示されたら成功です！ プログラムの構造 もう一度、さっきのプログラムを見てみましょう require &quot;sinatra&quot; require &quot;sinatra/reloader&quot; get &quot;/&quot; do &quot;Hello World&quot; end 1行目：Sinatraを読み込む 2行目：実行中にファイルが変更された場合、その変更を反映するツールを読み込む 4行目：”/”の要求を受けたら、 5行目：”Hello World”を返して 6行目：get “/”の処理を終わる こんな感じです。 6行目”Hello World”の部分を変更すると、どうなるでしょうか？ 7行目”/”の部分を変更すると、どうなるでしょうか？ いろいろ試してみましょう！ 改造のポイント get &quot;/&quot; do &quot;Hello World&quot; end の部分では、do~endの間に”Hello World”という文字列しかないですが、ここには処理を書き込むこともできます。 Rubyの処理を書き込めるので、いろいろ調べて試してみてください！ 試しにカウント機能作ってみました。 require &quot;sinatra&quot; require &quot;sinatra/reloader&quot; i = 0 get &quot;/&quot; do i = i + 1 &quot;#{i}&quot; end 一回読み込むごとに、表示される数字が増えていきます！ このように、いろいろ改造してみましょう！ 報告 現在、ブログのタグ機能がうまく機能していません。 工夫して実装したのですが、GitHub Pagesではうまく動かないようです。 そのため、代わりの方法を考えています。 タグ機能の復活までしばらくお待ちください。" />
+<meta property="og:description" content="webサーバーを作ろう！ こんにちは。高志中学校サイエンス部プログラミング班です。 今回のブログでは、Sinatraというフレームワークを使って、簡単なwebサーバーを作ってみようと思います！ Sinatraってなに？ Sinatraは、Rubyというプログラミング言語で動くwebサーバーフレームワークです。 分かりにくく感じますが、、、簡単に言うと、サーバーを楽に作れるものとなります。 Rubyのwebサーバーフレームワークというと、Ruby on Railsが有名ですが、Sinatraのほうがシンプルで単純なのでわかりやすいです。 早速インストール！ 早速インストール！のその前に・・・ RubyがPCにインストールされている必要があります。 インストールの方法はOSによって異なるので、「ruby インストール windows」のように検索して調べてみてください。 Rubyのインストールができたら、早速Sinatraのインストールをしていきましょう。 WindowsならWindows PowerShell、Macならターミナルを起動しましょう。 起動出来たら、下のように打ってみましょう。 gem install sinatra これを入力すると、Sinatra本体のインストールが始まります。 gem install sinatra-contrib で、Sinatra関連の便利ツールもインストールされます。 webサーバーで”Hello World” それでは、定番の”Hello World”を表示するプログラムを書いてみましょう。 どこかに作業用のフォルダーを作ってみましょう。 それから、AtomやVisual Studio Codeなどのテキストエディタでそのフォルダーを開きます。 そして、example.rbというファイルを作り、 require &quot;sinatra&quot; require &quot;sinatra/reloader&quot; get &quot;/&quot; do &quot;Hello World&quot; end と入力しましょう。 次に、example.rbを実行します。 ターミナルなどで、 cd /home/pi/ruby と入力して、フォルダーの中へ移動します（/home/pi/rubyの部分はフォルダーのパスを入力してください） そこで、 ruby example.rb として、example.rbを実行してみましょう。 いろいろログが出てきますが、”Hello World”とは表示されませんね。 また、何も起こらずにコマンドを打つ画面に戻ってしまったら、エラーが発生しているかもしれません。 プログラムの中身や手順をよく確認してみてください。 うまくいってたら、すでにサーバーが起動しています！ ブラウザで、https://localhost:4567/にアクセスしてみると・・・ どうでしょうか？ Hello Worldと表示されたら成功です！ プログラムの構造 もう一度、さっきのプログラムを見てみましょう require &quot;sinatra&quot; require &quot;sinatra/reloader&quot; get &quot;/&quot; do &quot;Hello World&quot; end 1行目：Sinatraを読み込む 2行目：実行中にファイルが変更された場合、その変更を反映するツールを読み込む 4行目：”/”の要求を受けたら、 5行目：”Hello World”を返して 6行目：get “/”の処理を終わる こんな感じです。 6行目”Hello World”の部分を変更すると、どうなるでしょうか？ 7行目”/”の部分を変更すると、どうなるでしょうか？ いろいろ試してみましょう！ 改造のポイント get &quot;/&quot; do &quot;Hello World&quot; end の部分では、do~endの間に”Hello World”という文字列しかないですが、ここには処理を書き込むこともできます。 Rubyの処理を書き込めるので、いろいろ調べて試してみてください！ 試しにカウント機能作ってみました。 require &quot;sinatra&quot; require &quot;sinatra/reloader&quot; i = 0 get &quot;/&quot; do i = i + 1 &quot;#{i}&quot; end 一回読み込むごとに、表示される数字が増えていきます！ このように、いろいろ改造してみましょう！ 報告 現在、ブログのタグ機能がうまく機能していません。 工夫して実装したのですが、GitHub Pagesではうまく動かないようです。 そのため、代わりの方法を考えています。 タグ機能の復活までしばらくお待ちください。" />
+<link rel="canonical" href="https://koshiscience.github.io/pages/koshiscience/2020/09/28/sinatra_first.html" />
+<meta property="og:url" content="https://koshiscience.github.io/pages/koshiscience/2020/09/28/sinatra_first.html" />
+<meta property="og:site_name" content="高志中学校サイエンス部" />
+<meta property="og:image" content="https://koshiscience.github.io/pages/koshiscience/img/2020-01-27-koshischool.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-09-28T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://koshiscience.github.io/pages/koshiscience/img/2020-01-27-koshischool.jpg" />
+<meta property="twitter:title" content="お手軽webサーバー、Sinatraはじめのいっぽ！" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2020-09-28T00:00:00+00:00","datePublished":"2020-09-28T00:00:00+00:00","description":"webサーバーを作ろう！ こんにちは。高志中学校サイエンス部プログラミング班です。 今回のブログでは、Sinatraというフレームワークを使って、簡単なwebサーバーを作ってみようと思います！ Sinatraってなに？ Sinatraは、Rubyというプログラミング言語で動くwebサーバーフレームワークです。 分かりにくく感じますが、、、簡単に言うと、サーバーを楽に作れるものとなります。 Rubyのwebサーバーフレームワークというと、Ruby on Railsが有名ですが、Sinatraのほうがシンプルで単純なのでわかりやすいです。 早速インストール！ 早速インストール！のその前に・・・ RubyがPCにインストールされている必要があります。 インストールの方法はOSによって異なるので、「ruby インストール windows」のように検索して調べてみてください。 Rubyのインストールができたら、早速Sinatraのインストールをしていきましょう。 WindowsならWindows PowerShell、Macならターミナルを起動しましょう。 起動出来たら、下のように打ってみましょう。 gem install sinatra これを入力すると、Sinatra本体のインストールが始まります。 gem install sinatra-contrib で、Sinatra関連の便利ツールもインストールされます。 webサーバーで”Hello World” それでは、定番の”Hello World”を表示するプログラムを書いてみましょう。 どこかに作業用のフォルダーを作ってみましょう。 それから、AtomやVisual Studio Codeなどのテキストエディタでそのフォルダーを開きます。 そして、example.rbというファイルを作り、 require &quot;sinatra&quot; require &quot;sinatra/reloader&quot; get &quot;/&quot; do &quot;Hello World&quot; end と入力しましょう。 次に、example.rbを実行します。 ターミナルなどで、 cd /home/pi/ruby と入力して、フォルダーの中へ移動します（/home/pi/rubyの部分はフォルダーのパスを入力してください） そこで、 ruby example.rb として、example.rbを実行してみましょう。 いろいろログが出てきますが、”Hello World”とは表示されませんね。 また、何も起こらずにコマンドを打つ画面に戻ってしまったら、エラーが発生しているかもしれません。 プログラムの中身や手順をよく確認してみてください。 うまくいってたら、すでにサーバーが起動しています！ ブラウザで、https://localhost:4567/にアクセスしてみると・・・ どうでしょうか？ Hello Worldと表示されたら成功です！ プログラムの構造 もう一度、さっきのプログラムを見てみましょう require &quot;sinatra&quot; require &quot;sinatra/reloader&quot; get &quot;/&quot; do &quot;Hello World&quot; end 1行目：Sinatraを読み込む 2行目：実行中にファイルが変更された場合、その変更を反映するツールを読み込む 4行目：”/”の要求を受けたら、 5行目：”Hello World”を返して 6行目：get “/”の処理を終わる こんな感じです。 6行目”Hello World”の部分を変更すると、どうなるでしょうか？ 7行目”/”の部分を変更すると、どうなるでしょうか？ いろいろ試してみましょう！ 改造のポイント get &quot;/&quot; do &quot;Hello World&quot; end の部分では、do~endの間に”Hello World”という文字列しかないですが、ここには処理を書き込むこともできます。 Rubyの処理を書き込めるので、いろいろ調べて試してみてください！ 試しにカウント機能作ってみました。 require &quot;sinatra&quot; require &quot;sinatra/reloader&quot; i = 0 get &quot;/&quot; do i = i + 1 &quot;#{i}&quot; end 一回読み込むごとに、表示される数字が増えていきます！ このように、いろいろ改造してみましょう！ 報告 現在、ブログのタグ機能がうまく機能していません。 工夫して実装したのですが、GitHub Pagesではうまく動かないようです。 そのため、代わりの方法を考えています。 タグ機能の復活までしばらくお待ちください。","headline":"お手軽webサーバー、Sinatraはじめのいっぽ！","image":"https://koshiscience.github.io/pages/koshiscience/img/2020-01-27-koshischool.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://koshiscience.github.io/pages/koshiscience/2020/09/28/sinatra_first.html"},"url":"https://koshiscience.github.io/pages/koshiscience/2020/09/28/sinatra_first.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+<!-- bootstrap読み込み -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link type="application/atom+xml" rel="alternate" href="https://koshiscience.github.io/pages/koshiscience/feed.xml" title="高志中学校サイエンス部" />
+<meta name="google-site-verification" content="-9SuY6z4NWerDbrslcklClEu9XbclQp763RT0_m5-nY" />
+<!-- highlight.js読み込み -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- css適用 -->
+<link rel="stylesheet" href="/assets/css/default.css">
+
+  </head>
+  <body>
+    <img class="w-100" src="/img/2020-01-27-koshischool.jpg" alt="トップ画像">
+<header>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">高志中学校サイエンス部</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav4">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/post">Blog</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.koshi-h.ed.jp/">高志中学校ホームページ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <br>
+    <div class="container-md">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="card bg-light shadow">
+  
+    <img class="card-img-top" src="/img/2020-01-27-koshischool.jpg" alt="メイン画像">
+  
+  <div class="card-body">
+    
+    <div class="border-bottom border-seccondary">
+      <h1 class="card-title">お手軽webサーバー、Sinatraはじめのいっぽ！</h1>
+      
+      2020年09月28日
+      <br>
+      
+      <a type="button" class="btn btn-primary btn-sm m-1" href="/tag/ruby">#Ruby</a>
+      
+      <a type="button" class="btn btn-primary btn-sm m-1" href="/tag/programming">#programming</a>
+      
+      <br>
+      
+    </div>
+    
+    <h1 id="webサーバーを作ろう">webサーバーを作ろう！</h1>
+
+<p>こんにちは。高志中学校サイエンス部プログラミング班です。</p>
+
+<p>今回のブログでは、Sinatraというフレームワークを使って、簡単なwebサーバーを作ってみようと思います！</p>
+
+<h1 id="sinatraってなに">Sinatraってなに？</h1>
+
+<p>Sinatraは、Rubyというプログラミング言語で動くwebサーバーフレームワークです。</p>
+
+<p>分かりにくく感じますが、、、簡単に言うと、サーバーを楽に作れるものとなります。</p>
+
+<p>Rubyのwebサーバーフレームワークというと、Ruby on Railsが有名ですが、Sinatraのほうがシンプルで単純なのでわかりやすいです。</p>
+
+<h1 id="早速インストール">早速インストール！</h1>
+
+<p>早速インストール！のその前に・・・</p>
+
+<p>RubyがPCにインストールされている必要があります。</p>
+
+<p>インストールの方法はOSによって異なるので、「ruby インストール windows」のように検索して調べてみてください。</p>
+
+<p>Rubyのインストールができたら、早速Sinatraのインストールをしていきましょう。</p>
+
+<p>WindowsならWindows PowerShell、Macならターミナルを起動しましょう。</p>
+
+<p>起動出来たら、下のように打ってみましょう。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install sinatra
+</code></pre></div></div>
+
+<p>これを入力すると、Sinatra本体のインストールが始まります。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install sinatra-contrib
+</code></pre></div></div>
+
+<p>で、Sinatra関連の便利ツールもインストールされます。</p>
+
+<h1 id="webサーバーでhello-world">webサーバーで”Hello World”</h1>
+
+<p>それでは、定番の”Hello World”を表示するプログラムを書いてみましょう。</p>
+
+<p>どこかに作業用のフォルダーを作ってみましょう。</p>
+
+<p>それから、AtomやVisual Studio Codeなどのテキストエディタでそのフォルダーを開きます。</p>
+
+<p>そして、example.rbというファイルを作り、</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">require</span> <span class="s2">"sinatra"</span>
+<span class="nb">require</span> <span class="s2">"sinatra/reloader"</span>
+
+<span class="n">get</span> <span class="s2">"/"</span> <span class="k">do</span>
+    <span class="s2">"Hello World"</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>と入力しましょう。</p>
+
+<p>次に、example.rbを実行します。</p>
+
+<p>ターミナルなどで、</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /home/pi/ruby
+</code></pre></div></div>
+
+<p>と入力して、フォルダーの中へ移動します（/home/pi/rubyの部分はフォルダーのパスを入力してください）</p>
+
+<p>そこで、</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby example.rb
+</code></pre></div></div>
+
+<p>として、example.rbを実行してみましょう。</p>
+
+<p>いろいろログが出てきますが、”Hello World”とは表示されませんね。</p>
+
+<p>また、何も起こらずにコマンドを打つ画面に戻ってしまったら、エラーが発生しているかもしれません。</p>
+
+<p>プログラムの中身や手順をよく確認してみてください。</p>
+
+<p>うまくいってたら、すでにサーバーが起動しています！</p>
+
+<p>ブラウザで、<a href="https://localhost:4567">https://localhost:4567/</a>にアクセスしてみると・・・</p>
+
+<p>どうでしょうか？</p>
+
+<p>Hello Worldと表示されたら成功です！</p>
+
+<h1 id="プログラムの構造">プログラムの構造</h1>
+
+<p>もう一度、さっきのプログラムを見てみましょう</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">require</span> <span class="s2">"sinatra"</span>
+<span class="nb">require</span> <span class="s2">"sinatra/reloader"</span>
+
+<span class="n">get</span> <span class="s2">"/"</span> <span class="k">do</span>
+    <span class="s2">"Hello World"</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>1行目：Sinatraを読み込む</p>
+
+<p>2行目：実行中にファイルが変更された場合、その変更を反映するツールを読み込む</p>
+
+<p>4行目：”/”の要求を受けたら、</p>
+
+<p>5行目：”Hello World”を返して</p>
+
+<p>6行目：get “/”の処理を終わる</p>
+
+<p>こんな感じです。</p>
+
+<p>6行目”Hello World”の部分を変更すると、どうなるでしょうか？</p>
+
+<p>7行目”/”の部分を変更すると、どうなるでしょうか？</p>
+
+<p>いろいろ試してみましょう！</p>
+
+<h1 id="改造のポイント">改造のポイント</h1>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">get</span> <span class="s2">"/"</span> <span class="k">do</span>
+    <span class="s2">"Hello World"</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>の部分では、do~endの間に”Hello World”という文字列しかないですが、ここには処理を書き込むこともできます。</p>
+
+<p>Rubyの処理を書き込めるので、いろいろ調べて試してみてください！</p>
+
+<p>試しにカウント機能作ってみました。</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">require</span> <span class="s2">"sinatra"</span>
+<span class="nb">require</span> <span class="s2">"sinatra/reloader"</span>
+
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">get</span> <span class="s2">"/"</span> <span class="k">do</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="s2">"</span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>一回読み込むごとに、表示される数字が増えていきます！</p>
+
+<p>このように、いろいろ改造してみましょう！</p>
+
+<h2 id="報告">報告</h2>
+
+<p>現在、ブログのタグ機能がうまく機能していません。</p>
+
+<p>工夫して実装したのですが、GitHub Pagesではうまく動かないようです。</p>
+
+<p>そのため、代わりの方法を考えています。</p>
+
+<p>タグ機能の復活までしばらくお待ちください。</p>
+
+    
+    
+    <div class="border-top border-seccondary">
+      <a href="/2020/03/26/kirakira.html">previous<br>IchigoJamを使ってキラキラアクセサリーを作ろう！</a>
+    </div>
+    
+    
+    <div class="border-top border-seccondary">
+      <a href="/2021/04/05/hisseki_tensorflow.html">next<br>CNNを導入して筆跡鑑定の認識精度100%を達成！</a>
+    </div>
+    
+    
+  </div>
+</div>
+
+        </div>
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-3">
+          <div class="card bg-light shadow">
+  <div class="card-body">
+    <h3 class="card-title">タグ</h3>
+    
+    <a href="/tag/science-club">#science-club</a><br>
+    
+    <a href="/tag/ichigojam">#IchigoJam</a><br>
+    
+    <a href="/tag/programming">#programming</a><br>
+    
+    <a href="/tag/ruby">#Ruby</a><br>
+    
+    <a href="/tag/hisseki">#hisseki</a><br>
+    
+    <a href="/tag/air-plane">#air-plane</a><br>
+    
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

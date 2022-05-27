@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+<title>
+  
+    IchigoJamを使ってキラキラアクセサリーを作ろう！ | 高志中学校サイエンス部
+  
+</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="IchigoJamを使ってキラキラアクセサリーを作ろう！" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="はじめに こんにちは。 IchigoJamチームです。 突然ですが、最近IchigoJamのOSが新しくなったことをご存じですか？ 12月に、福野さんがIchigoJam 1.4を正式リリースしました。 このアップデートでたくさんの機能がIchigoJamに追加されたのですが、今回はその中のWS.LEDコマンドを使って、お手軽キラキラアクセサリーを作りましょう！ 準備するもの Ichigojam(BASIC 1.4が書き込み済み。書き込み方法についてはこちら) WS2812B内蔵LEDテープ(amazonなどで「WS2812B LEDテープ」などと検索してみてください) IchigoJamでプログラミングする環境 モバイルバッテリーもしくは電池ボックスと乾電池(3本) はんだごてや導線(LEDテープを必要な長さに調節するのに使います) あれば、装飾したいマフラー、帽子など LEDテープの準備 まず、どこをどのように装飾するのかを考えます。 LEDテープは33個までに収めてください。 次に、必要な長さにカットします。 そして各端子に導線をはんだ付けして準備完了です。 プログラミング IchigoJamにプログラミングしていきます。 まず、SAVE0にあるプログラムを退避させてください。 WS.LED {数1}コマンドは、配列を最初から参照し、３つずつ読み取ってその３つの値をred、green、blueと認識して、光らせていきます。 一番単純な、全部のLEDをランダムに光らせるプログラムはこれです 1 @ARUN 10 FORI=0TO29:[I]=RND(100):NEXT:WS.LED10:WAIT10:CONT SAVE0して保存してください。 他にも、自分でいろいろ試してみてください。 接続 IchigoJam側の端子と、LEDテープ側の端子を接続していきます。 IchigoJam側 LEDテープ側 GND GND 5V VCC LED DO 上を参考に配線してみてください。 この状態で、IchigoJamの電源を入れると動き出します。 プログラムの最初に「@ARUN」という記述をしてSAVE0に保存すると、起動時に自動実行されるからです。(IchigoJam 1.4の新機能) 持ち運べるようにするには、モバイルバッテリーをつなげるか、乾電池の＋をIchigoJamの5Vに、ーをIchigoJamのGNDにさしてください。 完成 僕たちは、ネックウォーマーや帽子にLEDをつけて遊びました！ プログラムの設定で、かなり明るくなるようにしてあるので、結構まぶしいです。 そのあたりは、自分で試して変更してください。 このキラキラアクセサリーで、パーティーなどを盛り上げよう！" />
+<meta property="og:description" content="はじめに こんにちは。 IchigoJamチームです。 突然ですが、最近IchigoJamのOSが新しくなったことをご存じですか？ 12月に、福野さんがIchigoJam 1.4を正式リリースしました。 このアップデートでたくさんの機能がIchigoJamに追加されたのですが、今回はその中のWS.LEDコマンドを使って、お手軽キラキラアクセサリーを作りましょう！ 準備するもの Ichigojam(BASIC 1.4が書き込み済み。書き込み方法についてはこちら) WS2812B内蔵LEDテープ(amazonなどで「WS2812B LEDテープ」などと検索してみてください) IchigoJamでプログラミングする環境 モバイルバッテリーもしくは電池ボックスと乾電池(3本) はんだごてや導線(LEDテープを必要な長さに調節するのに使います) あれば、装飾したいマフラー、帽子など LEDテープの準備 まず、どこをどのように装飾するのかを考えます。 LEDテープは33個までに収めてください。 次に、必要な長さにカットします。 そして各端子に導線をはんだ付けして準備完了です。 プログラミング IchigoJamにプログラミングしていきます。 まず、SAVE0にあるプログラムを退避させてください。 WS.LED {数1}コマンドは、配列を最初から参照し、３つずつ読み取ってその３つの値をred、green、blueと認識して、光らせていきます。 一番単純な、全部のLEDをランダムに光らせるプログラムはこれです 1 @ARUN 10 FORI=0TO29:[I]=RND(100):NEXT:WS.LED10:WAIT10:CONT SAVE0して保存してください。 他にも、自分でいろいろ試してみてください。 接続 IchigoJam側の端子と、LEDテープ側の端子を接続していきます。 IchigoJam側 LEDテープ側 GND GND 5V VCC LED DO 上を参考に配線してみてください。 この状態で、IchigoJamの電源を入れると動き出します。 プログラムの最初に「@ARUN」という記述をしてSAVE0に保存すると、起動時に自動実行されるからです。(IchigoJam 1.4の新機能) 持ち運べるようにするには、モバイルバッテリーをつなげるか、乾電池の＋をIchigoJamの5Vに、ーをIchigoJamのGNDにさしてください。 完成 僕たちは、ネックウォーマーや帽子にLEDをつけて遊びました！ プログラムの設定で、かなり明るくなるようにしてあるので、結構まぶしいです。 そのあたりは、自分で試して変更してください。 このキラキラアクセサリーで、パーティーなどを盛り上げよう！" />
+<link rel="canonical" href="https://koshiscience.github.io/pages/koshiscience/2020/03/26/kirakira.html" />
+<meta property="og:url" content="https://koshiscience.github.io/pages/koshiscience/2020/03/26/kirakira.html" />
+<meta property="og:site_name" content="高志中学校サイエンス部" />
+<meta property="og:image" content="https://koshiscience.github.io/pages/koshiscience/img/2020-08-12-led_handspinner.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-26T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://koshiscience.github.io/pages/koshiscience/img/2020-08-12-led_handspinner.jpg" />
+<meta property="twitter:title" content="IchigoJamを使ってキラキラアクセサリーを作ろう！" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2020-03-26T00:00:00+00:00","datePublished":"2020-03-26T00:00:00+00:00","description":"はじめに こんにちは。 IchigoJamチームです。 突然ですが、最近IchigoJamのOSが新しくなったことをご存じですか？ 12月に、福野さんがIchigoJam 1.4を正式リリースしました。 このアップデートでたくさんの機能がIchigoJamに追加されたのですが、今回はその中のWS.LEDコマンドを使って、お手軽キラキラアクセサリーを作りましょう！ 準備するもの Ichigojam(BASIC 1.4が書き込み済み。書き込み方法についてはこちら) WS2812B内蔵LEDテープ(amazonなどで「WS2812B LEDテープ」などと検索してみてください) IchigoJamでプログラミングする環境 モバイルバッテリーもしくは電池ボックスと乾電池(3本) はんだごてや導線(LEDテープを必要な長さに調節するのに使います) あれば、装飾したいマフラー、帽子など LEDテープの準備 まず、どこをどのように装飾するのかを考えます。 LEDテープは33個までに収めてください。 次に、必要な長さにカットします。 そして各端子に導線をはんだ付けして準備完了です。 プログラミング IchigoJamにプログラミングしていきます。 まず、SAVE0にあるプログラムを退避させてください。 WS.LED {数1}コマンドは、配列を最初から参照し、３つずつ読み取ってその３つの値をred、green、blueと認識して、光らせていきます。 一番単純な、全部のLEDをランダムに光らせるプログラムはこれです 1 @ARUN 10 FORI=0TO29:[I]=RND(100):NEXT:WS.LED10:WAIT10:CONT SAVE0して保存してください。 他にも、自分でいろいろ試してみてください。 接続 IchigoJam側の端子と、LEDテープ側の端子を接続していきます。 IchigoJam側 LEDテープ側 GND GND 5V VCC LED DO 上を参考に配線してみてください。 この状態で、IchigoJamの電源を入れると動き出します。 プログラムの最初に「@ARUN」という記述をしてSAVE0に保存すると、起動時に自動実行されるからです。(IchigoJam 1.4の新機能) 持ち運べるようにするには、モバイルバッテリーをつなげるか、乾電池の＋をIchigoJamの5Vに、ーをIchigoJamのGNDにさしてください。 完成 僕たちは、ネックウォーマーや帽子にLEDをつけて遊びました！ プログラムの設定で、かなり明るくなるようにしてあるので、結構まぶしいです。 そのあたりは、自分で試して変更してください。 このキラキラアクセサリーで、パーティーなどを盛り上げよう！","headline":"IchigoJamを使ってキラキラアクセサリーを作ろう！","image":"https://koshiscience.github.io/pages/koshiscience/img/2020-08-12-led_handspinner.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://koshiscience.github.io/pages/koshiscience/2020/03/26/kirakira.html"},"url":"https://koshiscience.github.io/pages/koshiscience/2020/03/26/kirakira.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+<!-- bootstrap読み込み -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link type="application/atom+xml" rel="alternate" href="https://koshiscience.github.io/pages/koshiscience/feed.xml" title="高志中学校サイエンス部" />
+<meta name="google-site-verification" content="-9SuY6z4NWerDbrslcklClEu9XbclQp763RT0_m5-nY" />
+<!-- highlight.js読み込み -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- css適用 -->
+<link rel="stylesheet" href="/assets/css/default.css">
+
+  </head>
+  <body>
+    <img class="w-100" src="/img/2020-01-27-koshischool.jpg" alt="トップ画像">
+<header>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">高志中学校サイエンス部</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav4">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/post">Blog</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.koshi-h.ed.jp/">高志中学校ホームページ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <br>
+    <div class="container-md">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="card bg-light shadow">
+  
+    <img class="card-img-top" src="/img/2020-08-12-led_handspinner.jpg" alt="メイン画像">
+  
+  <div class="card-body">
+    
+    <div class="border-bottom border-seccondary">
+      <h1 class="card-title">IchigoJamを使ってキラキラアクセサリーを作ろう！</h1>
+      
+      2020年03月26日
+      <br>
+      
+      <a type="button" class="btn btn-primary btn-sm m-1" href="/tag/ichigojam">#IchigoJam</a>
+      
+      <a type="button" class="btn btn-primary btn-sm m-1" href="/tag/programming">#programming</a>
+      
+      <br>
+      
+    </div>
+    
+    <h1 id="はじめに">はじめに</h1>
+<p>こんにちは。</p>
+
+<p>IchigoJamチームです。</p>
+
+<p>突然ですが、最近IchigoJamのOSが新しくなったことをご存じですか？</p>
+
+<p>12月に、<a href="https://fukuno.jig.jp">福野さん</a>がIchigoJam 1.4を正式リリースしました。</p>
+
+<p>このアップデートでたくさんの機能がIchigoJamに追加されたのですが、今回はその中の<code class="language-plaintext highlighter-rouge">WS.LED</code>コマンドを使って、お手軽キラキラアクセサリーを作りましょう！</p>
+
+<h1 id="準備するもの">準備するもの</h1>
+<ul>
+  <li>Ichigojam(BASIC 1.4が書き込み済み。書き込み方法については<a href="https://15jamrecipe.jimdofree.com/%E5%91%A8%E8%BE%BA%E6%A9%9F%E5%99%A8/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E3%81%A8%E6%8E%A5%E7%B6%9A/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E6%9B%B4%E6%96%B0/">こちら</a>)</li>
+  <li>WS2812B内蔵LEDテープ(amazonなどで「WS2812B LEDテープ」などと検索してみてください)</li>
+  <li>IchigoJamでプログラミングする環境</li>
+  <li>モバイルバッテリーもしくは電池ボックスと乾電池(3本)</li>
+  <li>はんだごてや導線(LEDテープを必要な長さに調節するのに使います)</li>
+  <li>あれば、装飾したいマフラー、帽子など</li>
+</ul>
+
+<h1 id="ledテープの準備">LEDテープの準備</h1>
+<p>まず、どこをどのように装飾するのかを考えます。</p>
+
+<p>LEDテープは33個までに収めてください。</p>
+
+<p>次に、必要な長さにカットします。</p>
+
+<p>そして各端子に導線をはんだ付けして準備完了です。</p>
+
+<h1 id="プログラミング">プログラミング</h1>
+<p>IchigoJamにプログラミングしていきます。</p>
+
+<p>まず、SAVE0にあるプログラムを退避させてください。</p>
+
+<p><code class="language-plaintext highlighter-rouge">WS.LED {数1}</code>コマンドは、配列を最初から参照し、３つずつ読み取ってその３つの値をred、green、blueと認識して、光らせていきます。</p>
+
+<p>一番単純な、全部のLEDをランダムに光らせるプログラムはこれです</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 @ARUN
+10 FORI=0TO29:[I]=RND(100):NEXT:WS.LED10:WAIT10:CONT
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">SAVE0</code>して保存してください。</p>
+
+<p>他にも、自分でいろいろ試してみてください。</p>
+
+<h1 id="接続">接続</h1>
+<p>IchigoJam側の端子と、LEDテープ側の端子を接続していきます。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">IchigoJam側</th>
+      <th style="text-align: center">LEDテープ側</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">GND</td>
+      <td style="text-align: center">GND</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5V</td>
+      <td style="text-align: center">VCC</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">LED</td>
+      <td style="text-align: center">DO</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>上を参考に配線してみてください。</p>
+
+<p>この状態で、IchigoJamの電源を入れると動き出します。</p>
+
+<p>プログラムの最初に「<a href="https://github.com/ARUN" class="user-mention">@ARUN</a>」という記述をしてSAVE0に保存すると、起動時に自動実行されるからです。(IchigoJam 1.4の新機能)</p>
+
+<p>持ち運べるようにするには、モバイルバッテリーをつなげるか、乾電池の＋をIchigoJamの5Vに、ーをIchigoJamのGNDにさしてください。</p>
+
+<h1 id="完成">完成</h1>
+<p>僕たちは、ネックウォーマーや帽子にLEDをつけて遊びました！</p>
+
+<p>プログラムの設定で、かなり明るくなるようにしてあるので、結構まぶしいです。</p>
+
+<p>そのあたりは、自分で試して変更してください。</p>
+
+<p>このキラキラアクセサリーで、パーティーなどを盛り上げよう！</p>
+
+    
+    
+    <div class="border-top border-seccondary">
+      <a href="/2020/03/26/first.html">previous<br>はじめまして！</a>
+    </div>
+    
+    
+    <div class="border-top border-seccondary">
+      <a href="/2020/09/28/sinatra_first.html">next<br>お手軽webサーバー、Sinatraはじめのいっぽ！</a>
+    </div>
+    
+    
+  </div>
+</div>
+
+        </div>
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-3">
+          <div class="card bg-light shadow">
+  <div class="card-body">
+    <h3 class="card-title">タグ</h3>
+    
+    <a href="/tag/science-club">#science-club</a><br>
+    
+    <a href="/tag/ichigojam">#IchigoJam</a><br>
+    
+    <a href="/tag/programming">#programming</a><br>
+    
+    <a href="/tag/ruby">#Ruby</a><br>
+    
+    <a href="/tag/hisseki">#hisseki</a><br>
+    
+    <a href="/tag/air-plane">#air-plane</a><br>
+    
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
